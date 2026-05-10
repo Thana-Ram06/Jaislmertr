@@ -1,0 +1,180 @@
+Use this exact Replit AI master prompt:
+
+---
+
+Improve and fix the existing Jaiscape tourism website while keeping the same premium cinematic UI design. Do not redesign the whole website. Only fix functionality issues, improve content, and clean up unnecessary sections. Keep everything fully optimized for Next.js 16 + TypeScript + Tailwind CSS + Vercel deployment.
+
+IMPORTANT:
+
+* Maintain current luxury black/gold cinematic design
+* Keep animations lightweight
+* Ensure smooth mobile responsiveness
+* Keep performance optimized
+* Use Next.js App Router best practices
+* Maintain premium startup-quality UI
+
+FIXES & IMPROVEMENTS REQUIRED:
+
+1. Fix AI Trip Planner Button
+   The “Plan Your Trip” / AI Trip Planner button currently does not work.
+
+Make it functional:
+
+* When clicked, open a premium modal or dedicated page
+* Add a modern itinerary form:
+
+  * Budget input
+  * Number of days
+  * Travel style selector:
+
+    * Luxury
+    * Budget
+    * Adventure
+  * Interests:
+
+    * Desert Safari
+    * Cafes
+    * Hidden Places
+    * Photography
+    * Luxury Camps
+
+Add a “Generate Trip” button.
+
+After clicking generate:
+Show a realistic mock itinerary with:
+
+* Day-wise trip plan
+* Recommended places
+* Budget estimate
+* Suggested cafes/camps
+* Sunset recommendations
+* Local travel tips
+
+Use static mock data only.
+Do NOT integrate real AI APIs.
+
+2. Fix “View Place” Buttons
+   Currently clicking any place card does nothing.
+
+Create working detailed place pages for:
+
+* Jaisalmer Fort
+* Sam Sand Dunes
+* Gadisar Lake
+* Kuldhara Village
+* Patwon Ki Haveli
+
+Each page should include:
+
+A. Hero Section
+
+* Large cinematic image
+* Place name
+* Small subtitle
+* Location badge
+
+B. About This Place
+Add realistic travel content and descriptions.
+
+C. Image Gallery
+Add multiple cinematic royalty-free placeholder images.
+Use next/image optimization.
+
+D. Location Section
+Add:
+
+* map preview section
+* “Open in Maps” button
+* best visiting time
+* travel distance info
+
+E. Travel Info
+Add:
+
+* Entry fee
+* Photography tips
+* Nearby cafes
+* Nearby camps
+* Sunset timing
+
+F. Experience Cards
+Add luxury experience cards:
+
+* Camel Safari
+* Sunset Viewpoint
+* Rooftop Dining
+* Photography Spots
+
+3. Fix “Jaisalmer In Motion” Section
+   Currently videos do not work.
+
+Remove all video play buttons completely.
+Convert this section into a premium cinematic photo gallery only.
+
+Requirements:
+
+* Keep same immersive layout
+* Use cinematic images instead of videos
+* Smooth hover animations
+* No broken interactions
+
+4. Contact Section Cleanup
+   In the Contact section:
+
+* Remove phone number
+* Remove physical address
+* Keep only email
+
+Replace email with:
+[hellojaiscape@gmail.com](mailto:hellojaiscape@gmail.com)
+
+Display it in a premium minimal style.
+
+5. Remove Subscribe Button
+   Remove the newsletter subscribe button completely from the footer/contact section.
+
+Keep the footer clean and minimal.
+
+6. Add Realistic Content
+   Currently many sections feel empty.
+
+Add realistic tourism content across:
+
+* hidden places
+* camps
+* cafes
+* desert experiences
+* travel guides
+
+Do not use lorem ipsum.
+
+7. Improve UX
+
+* smooth page transitions
+* clickable cards
+* proper routing
+* loading states
+* skeleton loaders
+* mobile touch optimization
+
+8. Performance Optimization
+   IMPORTANT:
+
+* Use next/image everywhere
+* Lazy load image galleries
+* Avoid hydration issues
+* Keep Framer Motion lightweight
+* Optimize for fast Vercel deployment
+* Keep Lighthouse performance high
+
+9. Final Goal
+   The final website should feel like a real premium tourism startup focused on Jaisalmer, with:
+
+* cinematic luxury experience
+* working interactions
+* immersive place pages
+* realistic content
+* smooth mobile UX
+* modern startup-quality polish
+
+Do not break the existing design system while implementing these improvements.
