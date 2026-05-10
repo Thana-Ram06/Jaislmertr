@@ -1,0 +1,157 @@
+Use this exact prompt in Replit AI:
+
+---
+
+Enhance the existing Jaiscape tourism website by adding a premium sponsorship/business listing system for local Jaisalmer businesses while keeping the same luxury cinematic design. Do not redesign the whole website. Only extend the functionality and maintain the premium startup feel.
+
+IMPORTANT:
+
+* Keep the current premium black/gold cinematic UI
+* Maintain mobile responsiveness
+* Keep everything Vercel compatible
+* Use Next.js 16 App Router + TypeScript + Tailwind CSS
+* Keep performance optimized
+* Use reusable components
+
+NEW FEATURE REQUIRED:
+
+1. Add “Partner With Jaiscape” Button in Navbar
+   In the top navigation bar, add a premium CTA button:
+
+Button text:
+“Partner With Jaiscape”
+
+Style:
+
+* premium gold accent button
+* elegant hover effect
+* mobile responsive
+* visible but minimal
+
+When clicked:
+Open a premium modal or dedicated page.
+
+2. Create “Partner With Us” Section/Page
+   Create a professional sponsor/business listing page where local businesses can contact Jaiscape to get featured.
+
+Target businesses:
+
+* Desert camps
+* Hotels
+* Cafes
+* Restaurants
+* Safari providers
+* Local shops
+* Rooftop dining places
+* Photography experiences
+
+3. Add Professional Intro Content
+   Add premium startup-style content like:
+
+“Jaiscape helps travelers discover the best experiences in Jaisalmer. We collaborate with premium camps, cafes, hotels, restaurants, and local businesses to showcase authentic desert experiences to travelers from around the world.”
+
+Also add:
+
+* global tourist exposure
+* premium listing opportunity
+* social media promotion
+* featured placement on website
+* cinematic content collaboration
+
+4. Add Business Benefits Section
+   Create premium cards explaining benefits:
+
+Examples:
+
+* Featured Listings
+* Instagram Promotion
+* Tourist Reach
+* Premium Branding
+* Travel Discovery Exposure
+* Luxury Showcase
+
+Use elegant icons and modern hover animations.
+
+5. Add Contact Options
+   Create a premium contact card section.
+
+Display:
+
+Phone:
++91 6350577731
+
+Email:
+[hellojaiscape@gmail.com](mailto:hellojaiscape@gmail.com)
+
+Add buttons:
+
+* Call Now
+* WhatsApp
+* Send Email
+
+Use clean premium UI.
+
+6. Add Business Inquiry Form
+   Create a modern form with fields:
+
+* Business Name
+* Owner Name
+* Business Type
+* Phone Number
+* Email
+* Location
+* Short Description
+
+Business type options:
+
+* Desert Camp
+* Hotel
+* Cafe
+* Restaurant
+* Shop
+* Safari
+* Other
+
+Add submit button:
+“Request Partnership”
+
+For now:
+
+* No backend required
+* Just create beautiful UI and success message
+
+7. Add Featured Partner Section
+   Create a section on homepage:
+   “Featured Partners”
+
+Show premium cards for:
+
+* desert camps
+* cafes
+* hotels
+* restaurants
+
+Use realistic placeholder content and cinematic images.
+
+8. Add CTA Section on Homepage
+   Add a luxury section like:
+
+“Own a Camp, Cafe or Hotel in Jaisalmer?”
+
+Subtext:
+“Partner with Jaiscape and showcase your business to travelers from around the world.”
+
+Button:
+“Become a Partner”
+
+9. Performance Requirements
+
+* Keep animations lightweight
+* Use next/image optimization
+* Lazy load images
+* Maintain smooth mobile performance
+* Avoid hydration issues
+* Ensure fast Vercel deployment
+
+10. Final Goal
+    The website should now feel like a real tourism discovery and business promotion platform for Jaisalmer, where local camps, cafes, hotels, and businesses can connect with Jaiscape to get featured professionally. Keep the design globally premium, cinematic, immersive, and startup-quality.

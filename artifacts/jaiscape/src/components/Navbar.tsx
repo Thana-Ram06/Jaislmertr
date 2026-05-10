@@ -39,7 +39,7 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-6">
               {navLinks.map((link) => (
                 <Link
@@ -55,15 +55,28 @@ export function Navbar() {
               ))}
             </div>
             <div className="h-4 w-px bg-border"></div>
-            <Link href="/explore">
-              <Button
-                variant="outline"
-                className="border-[#C8A96B] text-[#C8A96B] hover:bg-[#C8A96B] hover:text-black font-medium tracking-wide transition-all duration-300"
-                data-testid="button-plan-trip"
-              >
-                Plan Trip
-              </Button>
-            </Link>
+            <div className="flex items-center gap-3">
+              <Link href="/partner">
+                <Button
+                  variant="ghost"
+                  className={`text-sm font-medium tracking-wide border border-[#C8A96B]/30 text-[#C8A96B] hover:bg-[#C8A96B]/10 hover:border-[#C8A96B] transition-all duration-300 ${
+                    location === "/partner" ? "bg-[#C8A96B]/10 border-[#C8A96B]" : ""
+                  }`}
+                  data-testid="button-partner"
+                >
+                  Partner With Jaiscape
+                </Button>
+              </Link>
+              <Link href="/explore">
+                <Button
+                  variant="outline"
+                  className="border-[#C8A96B] text-[#C8A96B] hover:bg-[#C8A96B] hover:text-black font-medium tracking-wide transition-all duration-300"
+                  data-testid="button-plan-trip"
+                >
+                  Plan Trip
+                </Button>
+              </Link>
+            </div>
           </nav>
 
           {/* Mobile Menu Toggle */}
@@ -100,10 +113,18 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
+              <Link href="/partner" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button
+                  variant="ghost"
+                  className="mt-2 border border-[#C8A96B]/40 text-[#C8A96B] hover:bg-[#C8A96B]/10 font-medium tracking-wide text-lg px-8 py-6"
+                >
+                  Partner With Jaiscape
+                </Button>
+              </Link>
               <Link href="/explore" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button
                   variant="outline"
-                  className="mt-4 border-[#C8A96B] text-[#C8A96B] hover:bg-[#C8A96B] hover:text-black font-medium tracking-wide transition-all duration-300 text-lg px-8 py-6"
+                  className="border-[#C8A96B] text-[#C8A96B] hover:bg-[#C8A96B] hover:text-black font-medium tracking-wide transition-all duration-300 text-lg px-8 py-6"
                 >
                   Plan Trip
                 </Button>

@@ -10,6 +10,7 @@ import HiddenPlaces from "@/pages/HiddenPlaces";
 import DesertCamps from "@/pages/DesertCamps";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import Partner from "@/pages/Partner";
 
 import JaisalmerFort from "@/pages/places/JaisalmerFort";
 import SamSandDunes from "@/pages/places/SamSandDunes";
@@ -28,6 +29,7 @@ function Router() {
       <Route path="/desert-camps" component={DesertCamps} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/partner" component={Partner} />
 
       <Route path="/places/jaisalmer-fort" component={JaisalmerFort} />
       <Route path="/places/sam-sand-dunes" component={SamSandDunes} />

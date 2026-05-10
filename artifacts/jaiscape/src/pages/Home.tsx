@@ -2,7 +2,7 @@ import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowDown, Loader2, Sparkles, X, MapPin, Calendar, Wallet, Heart } from "lucide-react";
+import { ArrowDown, Loader2, Sparkles, X, MapPin, Calendar, Wallet, Heart, Handshake } from "lucide-react";
 import heroDunes from "@/assets/images/hero-dunes.png";
 import cardSafari from "@/assets/images/card-safari.png";
 import cardFort from "@/assets/images/card-fort.png";
@@ -558,6 +558,95 @@ export default function Home() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Featured Partners */}
+      <section className="py-32 bg-[#0B0B0B]">
+        <div className="container mx-auto px-6">
+          <div className="flex items-end justify-between mb-16 flex-wrap gap-6">
+            <div>
+              <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Featured Partners</h2>
+              <div className="w-16 h-px bg-[#C8A96B]" />
+              <p className="text-muted-foreground mt-4 text-sm font-light">Handpicked businesses trusted by Jaiscape</p>
+            </div>
+            <Link href="/partner">
+              <Button variant="outline" className="border-[#C8A96B]/40 text-[#C8A96B] hover:bg-[#C8A96B] hover:text-black rounded-none bg-transparent">
+                Become a Partner
+              </Button>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { name: "SUJÁN The Serai", type: "Luxury Desert Camp", tag: "Desert Camp", dist: "Sam Dunes, 42km", img: gridCamp, desc: "Award-winning ultra-luxury camp at Sam — private pool tents, Michelin-style cuisine, and the finest desert hospitality." },
+              { name: "Moustache Café", type: "Rooftop Café", tag: "Café", dist: "Fort Road, City Centre", img: gridRestaurant, desc: "Beloved rooftop café inside the fort — locally sourced Rajasthani meals, strong chai, and views of the golden city walls." },
+              { name: "Thar Adventures", type: "Safari Provider", tag: "Safari", dist: "Jaisalmer Desert", img: gridCamel, desc: "Private jeep and camel safaris into the deep Thar — guided by local experts who know every hidden dune and desert route." },
+              { name: "Shahi Palace Hotel", type: "Heritage Hotel", tag: "Hotel", dist: "Near Fort Entrance", img: gridWalls, desc: "Intricately carved sandstone haveli-style hotel steps from the fort — traditional jharokha suites with modern comforts." },
+            ].map((partner, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                whileHover={{ y: -6 }}
+                className="group bg-[#151515] border border-border hover:border-[#C8A96B]/30 transition-all duration-300"
+              >
+                <div className="relative h-52 overflow-hidden">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                    style={{ backgroundImage: `url(${partner.img})` }}
+                  />
+                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors" />
+                  <div className="absolute top-4 left-4 bg-black/60 backdrop-blur border border-[#C8A96B]/30 px-3 py-1 text-xs text-[#C8A96B] uppercase tracking-widest">
+                    {partner.tag}
+                  </div>
+                  <div className="absolute top-4 right-4 bg-[#C8A96B]/20 border border-[#C8A96B]/40 px-2 py-1 text-xs text-[#C8A96B]">
+                    ✦ Featured
+                  </div>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-serif text-xl text-foreground mb-0.5">{partner.name}</h3>
+                  <p className="text-xs text-[#C8A96B]/70 tracking-wider uppercase mb-3 flex items-center gap-1.5">
+                    <MapPin size={10} /> {partner.dist}
+                  </p>
+                  <p className="text-muted-foreground text-xs leading-relaxed">{partner.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Business CTA */}
+      <section className="py-28 bg-[#151515] relative overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: `url(${gridCamel})` }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#C8A96B]/5 blur-[100px] rounded-full pointer-events-none" />
+        <div className="relative z-10 container mx-auto px-6">
+          <div className="max-w-2xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 border border-[#C8A96B]/30 px-4 py-2 text-xs text-[#C8A96B] uppercase tracking-widest mb-8">
+              <Handshake size={12} /> For Businesses
+            </div>
+            <h2 className="font-serif text-4xl md:text-6xl text-foreground mb-6 leading-tight">
+              Own a Camp, Café<br />or Hotel in Jaisalmer?
+            </h2>
+            <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
+              Partner with Jaiscape and showcase your business to travelers from around the world. Get featured listings, social media promotion, and a place in every AI-generated itinerary.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center mb-12">
+              {["Desert Camps", "Hotels", "Cafes & Restaurants", "Safari Providers", "Local Artisans"].map((tag) => (
+                <span key={tag} className="text-xs text-[#C8A96B]/60 border border-[#C8A96B]/15 px-4 py-2">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <Link href="/partner">
+              <Button className="bg-[#C8A96B] text-black hover:bg-[#C8A96B]/90 h-14 px-14 text-lg rounded-none">
+                Become a Partner
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
