@@ -27,6 +27,7 @@ export function Footer() {
                 { label: "Desert Camps", href: "/desert-camps" },
                 { label: "About", href: "/about" },
                 { label: "Contact", href: "/contact" },
+                { label: "Partner With Us", href: "/partner" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link href={item.href} className="text-sm text-muted-foreground hover:text-[#C8A96B] transition-colors">
@@ -49,13 +50,31 @@ export function Footer() {
               </li>
             </ul>
             <div className="flex items-center gap-5 mt-10">
-              <a href="#" aria-label="Instagram" className="text-muted-foreground hover:text-[#C8A96B] transition-colors">
+              <a
+                href="https://www.instagram.com/jaiscape.info?igsh=d2s0MnFzM3FwdWJ2&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-muted-foreground hover:text-[#C8A96B] transition-colors"
+              >
                 <SiInstagram size={18} />
               </a>
-              <a href="#" aria-label="X" className="text-muted-foreground hover:text-[#C8A96B] transition-colors">
+              <a
+                href="https://x.com/ramthana10?s=21"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
+                className="text-muted-foreground hover:text-[#C8A96B] transition-colors"
+              >
                 <SiX size={18} />
               </a>
-              <a href="#" aria-label="YouTube" className="text-muted-foreground hover:text-[#C8A96B] transition-colors">
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="text-muted-foreground hover:text-[#C8A96B] transition-colors"
+              >
                 <SiYoutube size={18} />
               </a>
             </div>
@@ -63,7 +82,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">© 2025 Jaiscape. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground">© 2026 Jaiscape. All rights reserved.</p>
           <p className="text-xs text-muted-foreground">Crafted with love for the Golden City</p>
         </div>
       </div>

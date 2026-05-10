@@ -1,0 +1,136 @@
+Use this exact Replit AI prompt:
+
+---
+
+Update and improve the existing Jaiscape website while keeping the current premium cinematic luxury design. Do not redesign the website. Only apply the following functional and content updates carefully while maintaining full Vercel compatibility and smooth performance.
+
+IMPORTANT:
+
+* Keep Next.js 16 App Router + TypeScript + Tailwind CSS
+* Maintain premium black/gold cinematic UI
+* Keep mobile responsiveness
+* Ensure smooth animations and performance
+* Do not break existing layouts
+
+UPDATES REQUIRED:
+
+1. Update Instagram Link
+   In all Instagram buttons/icons/tabs across the website, replace existing links with:
+
+[https://www.instagram.com/jaiscape.info?igsh=d2s0MnFzM3FwdWJ2&utm_source=qr](https://www.instagram.com/jaiscape.info?igsh=d2s0MnFzM3FwdWJ2&utm_source=qr)
+
+Ensure:
+
+* opens correctly in new tab
+* proper hover effect
+* works on mobile
+
+2. Update X (Twitter) Link
+   In all X/Twitter buttons/icons/tabs, replace existing links with:
+
+[https://x.com/ramthana10?s=21](https://x.com/ramthana10?s=21)
+
+Ensure:
+
+* opens correctly
+* responsive
+* premium hover interaction
+
+3. Update Footer Year
+   Replace:
+   ©2025
+
+With:
+©2026
+
+across the entire website footer.
+
+4. Fix “Plan Your Trip” Button
+   The “Plan Your Trip” / AI Trip Planner button is still not functioning properly.
+
+Fully fix it:
+
+* Ensure button opens correctly
+* Modal/page must render properly
+* No hydration issues
+* No broken click handlers
+* Ensure proper client-side functionality
+
+When opened:
+Show:
+
+* itinerary form
+* generate trip button
+* mock AI itinerary output
+
+Everything should work smoothly on desktop and mobile.
+
+5. Partnership Form Functionality
+   The “Business Inquiry” / “Request Partnership” form currently only has UI.
+
+Make it functional.
+
+When user fills the form and clicks:
+“Request Partnership”
+
+The submitted information should:
+
+A. Send to Email
+Send all form details to:
+
+[hellojaiscape@gmail.com](mailto:hellojaiscape@gmail.com)
+
+Include:
+
+* Business Name
+* Owner Name
+* Business Type
+* Phone Number
+* Email
+* Location
+* Description
+
+B. WhatsApp Integration
+After submission:
+Automatically open WhatsApp with a prefilled partnership inquiry message containing all submitted details.
+
+WhatsApp number:
++916350577731
+
+Create properly formatted WhatsApp message text.
+
+6. Add Success State
+   After form submission:
+   Show a premium success message like:
+
+“Thank you for your interest in partnering with Jaiscape. Our team will contact you shortly.”
+
+Add elegant animation and premium UI.
+
+7. Recommended Technical Implementation
+   Use:
+
+* EmailJS or FormSubmit for email functionality
+* WhatsApp deep linking
+* Client-side form handling
+* Environment variable support if needed
+* Fully Vercel-compatible approach
+
+8. Maintain Performance
+   IMPORTANT:
+
+* Keep lightweight implementation
+* Avoid unnecessary packages
+* No server-side errors
+* No hydration mismatch
+* Preserve Lighthouse performance
+
+9. Final Goal
+   The website should now function like a real premium tourism startup platform where:
+
+* social links work perfectly
+* AI trip planner works smoothly
+* business owners can contact Jaiscape professionally
+* partnership forms send inquiry details successfully
+* WhatsApp integration works properly
+* everything feels polished, cinematic, premium, and production ready.

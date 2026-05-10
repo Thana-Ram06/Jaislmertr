@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -7,10 +7,10 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 import {
   Star, Globe, Instagram, TrendingUp, Gem, Camera, MapPin,
-  Phone, Mail, MessageCircle, Handshake, Check
+  Phone, Mail, MessageCircle, Handshake, Check, Loader2, PartyPopper
 } from "lucide-react";
 import aboutHero from "@/assets/images/about-hero.png";
 
@@ -71,7 +71,9 @@ const businessTypes = [
 ];
 
 export default function Partner() {
-  const { toast } = useToast();
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -86,11 +88,47 @@ export default function Partner() {
     },
   });
 
-  function onSubmit(_values: FormValues) {
-    toast({
-      title: "Partnership Request Sent!",
-      description: "We'll review your details and get back to you within 24–48 hours.",
-    });
+  async function onSubmit(values: FormValues) {
+    setSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      await fetch("https://formsubmit.co/ajax/hellojaiscape@gmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `Partnership Inquiry — ${values.businessName}`,
+          "Business Name": values.businessName,
+          "Owner Name": values.ownerName,
+          "Business Type": values.businessType,
+          "Phone": values.phone,
+          "Email": values.email,
+          "Location": values.location,
+          "Description": values.description,
+        }),
+      });
+    } catch {
+      // Continue even if FormSubmit fails — WhatsApp still opens
+    }
+
+    const waMessage = encodeURIComponent(
+      `Hi Jaiscape Team! 👋\n\nI'd like to partner with Jaiscape.\n\n` +
+      `📌 *Business Name:* ${values.businessName}\n` +
+      `👤 *Owner Name:* ${values.ownerName}\n` +
+      `🏷️ *Business Type:* ${values.businessType}\n` +
+      `📍 *Location:* ${values.location}\n` +
+      `📞 *Phone:* ${values.phone}\n` +
+      `📧 *Email:* ${values.email}\n\n` +
+      `📝 *About:* ${values.description}\n\n` +
+      `Looking forward to hearing from you!`
+    );
+
+    setTimeout(() => {
+      window.open(`https://wa.me/916350577731?text=${waMessage}`, "_blank");
+    }, 600);
+
+    setSubmitting(false);
+    setSubmitted(true);
     form.reset();
   }
 
@@ -303,6 +341,41 @@ export default function Partner() {
 
               {/* Inquiry Form */}
               <div className="lg:col-span-3 bg-[#0B0B0B] border border-border p-8 md:p-12">
+                <AnimatePresence mode="wait">
+                  {submitted ? (
+                    <motion.div
+                      key="success"
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="flex flex-col items-center justify-center text-center py-16 h-full"
+                    >
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{ type: "spring", stiffness: 200, delay: 0.1 }}
+                        className="w-20 h-20 border border-[#C8A96B]/40 flex items-center justify-center mb-8 bg-[#C8A96B]/10"
+                      >
+                        <PartyPopper size={36} className="text-[#C8A96B]" />
+                      </motion.div>
+                      <h3 className="font-serif text-3xl text-foreground mb-4">Request Sent!</h3>
+                      <div className="w-16 h-px bg-[#C8A96B] mx-auto mb-6" />
+                      <p className="text-muted-foreground text-base leading-relaxed max-w-sm mb-4">
+                        Thank you for your interest in partnering with Jaiscape. Our team will contact you shortly.
+                      </p>
+                      <p className="text-muted-foreground/60 text-sm mb-10">
+                        A WhatsApp message with your details has also been opened — send it to confirm your inquiry.
+                      </p>
+                      <Button
+                        onClick={() => setSubmitted(false)}
+                        variant="outline"
+                        className="border-[#C8A96B]/40 text-[#C8A96B] hover:bg-[#C8A96B]/10 rounded-none"
+                      >
+                        Submit Another Inquiry
+                      </Button>
+                    </motion.div>
+                  ) : (
+                    <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                 <h3 className="font-serif text-2xl text-foreground mb-2">Business Inquiry</h3>
                 <p className="text-muted-foreground text-sm mb-8">Fill in your details and we'll reach out with partnership options.</p>
 
@@ -409,12 +482,25 @@ export default function Partner() {
 
                     <Button
                       type="submit"
-                      className="w-full h-14 bg-[#C8A96B] text-black hover:bg-[#C8A96B]/90 rounded-none text-base font-medium"
+                      disabled={submitting}
+                      className="w-full h-14 bg-[#C8A96B] text-black hover:bg-[#C8A96B]/90 rounded-none text-base font-medium disabled:opacity-60"
                     >
-                      Request Partnership
+                      {submitting ? (
+                        <span className="flex items-center gap-2">
+                          <Loader2 size={16} className="animate-spin" /> Sending…
+                        </span>
+                      ) : (
+                        "Request Partnership"
+                      )}
                     </Button>
+                    {submitError && (
+                      <p className="text-red-400 text-xs text-center">{submitError}</p>
+                    )}
                   </form>
                 </Form>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </div>
           </div>
