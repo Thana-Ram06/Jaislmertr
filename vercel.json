@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm --filter @workspace/jaiscape run build && cp -r artifacts/jaiscape/dist/public ./public",
+  "buildCommand": "cd artifacts/jaiscape && pnpm run build && cp -r dist/public ../../public",
   "outputDirectory": "public",
   "installCommand": "pnpm install",
   "framework": null,
