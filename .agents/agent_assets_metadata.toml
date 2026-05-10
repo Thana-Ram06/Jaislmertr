@@ -1,0 +1,218 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "apAbvZWKY8K55ikj_VKTp"
+uri = "file://artifacts/jaiscape/src/assets/images/hero-dunes.png"
+type = "image"
+title = "Cinematic Jaisalmer dune aerial"
+
+[[generated]]
+id = "RU9DDyyFOACLXLC0nJh8e"
+uri = "file://artifacts/jaiscape/src/assets/images/hero-fort.png"
+type = "image"
+title = "Jaisalmer fort at twilight"
+
+[[generated]]
+id = "gvqqjgF-xQtDYVhWbHRhY"
+uri = "file://artifacts/jaiscape/src/assets/images/card-safari.png"
+type = "image"
+title = "Desert safari camels"
+
+[[generated]]
+id = "Mp6EgO1pDo5R7XE0b5iS2"
+uri = "file://artifacts/jaiscape/src/assets/images/card-fort.png"
+type = "image"
+title = "Fort golden hour"
+
+[[generated]]
+id = "NEKfAf2l94w_sxykKj5dz"
+uri = "file://artifacts/jaiscape/src/assets/images/card-cafe.png"
+type = "image"
+title = "Rooftop cafe Jaisalmer"
+
+[[generated]]
+id = "CPaTsCM7u_gPYHjHjAn9G"
+uri = "file://artifacts/jaiscape/src/assets/images/card-tent.png"
+type = "image"
+title = "Luxury tent interior"
+
+[[generated]]
+id = "EB_Tvmd9sVm_3Ntnnn7WW"
+uri = "file://artifacts/jaiscape/src/assets/images/card-sunset.png"
+type = "image"
+title = "Dunes sunset"
+
+[[generated]]
+id = "QmzSfs71xhEKsC4yiOTNw"
+uri = "file://artifacts/jaiscape/src/assets/images/grid-dunes.png"
+type = "image"
+title = "Dunes landscape"
+
+[[generated]]
+id = "ankrwhbdtz1QTYc7F5Q8H"
+uri = "file://artifacts/jaiscape/src/assets/images/grid-camp.png"
+type = "image"
+title = "Desert camp exterior"
+
+[[generated]]
+id = "ZrudeBGQrpqEmobilFb9o"
+uri = "file://artifacts/jaiscape/src/assets/images/grid-streets.png"
+type = "image"
+title = "Old city streets"
+
+[[generated]]
+id = "8YlEf4R0B95OMcqn_kokK"
+uri = "file://artifacts/jaiscape/src/assets/images/grid-camel.png"
+type = "image"
+title = "Camel caravan sunset"
+
+[[generated]]
+id = "fydN2QflV6v4JErGq47GI"
+uri = "file://artifacts/jaiscape/src/assets/images/grid-walls.png"
+type = "image"
+title = "Fort walls"
+
+[[generated]]
+id = "vIrP8RKPFkRIUwRASNPQS"
+uri = "file://artifacts/jaiscape/src/assets/images/grid-restaurant.png"
+type = "image"
+title = "Rooftop restaurant"
+
+[[generated]]
+id = "tlX8oDE5MWYFXf4pnLAhI"
+uri = "file://artifacts/jaiscape/src/assets/images/reel-dunes.png"
+type = "image"
+title = "Desert dunes reel"
+
+[[generated]]
+id = "cOCuBmgE31H3O8ATrGxY7"
+uri = "file://artifacts/jaiscape/src/assets/images/reel-towers.png"
+type = "image"
+title = "Fort towers reel"
+
+[[generated]]
+id = "-mXWN42f_hf40M7abC7wV"
+uri = "file://artifacts/jaiscape/src/assets/images/reel-rider.png"
+type = "image"
+title = "Camel rider reel"
+
+[[generated]]
+id = "3CUvD82b2cPnbQMS80zxy"
+uri = "file://artifacts/jaiscape/src/assets/images/reel-fire.png"
+type = "image"
+title = "Night camp fire reel"
+
+[[generated]]
+id = "AqaAHS7fd2CZAxJBDz8Y6"
+uri = "file://artifacts/jaiscape/src/assets/images/about-hero.png"
+type = "image"
+title = "Jaisalmer atmospheric landscape"
+
+[[generated]]
+id = "3KfBSptsy0FxMVlktcqzU"
+uri = "file://artifacts/jaiscape/src/assets/images/explore-1.png"
+type = "image"
+title = "Jaisalmer sunset spot"
+
+[[generated]]
+id = "s-Xyfk4chcz0Jscx3rKgw"
+uri = "file://artifacts/jaiscape/src/assets/images/explore-2.png"
+type = "image"
+title = "Jaisalmer luxury cafe"
+
+[[generated]]
+id = "OqnVWHFMtUPNGMnFS6BdW"
+uri = "file://artifacts/jaiscape/src/assets/images/explore-3.png"
+type = "image"
+title = "Jaisalmer ancient temple"
+
+[[generated]]
+id = "IAM1Ox8s1bXG9VfHinQil"
+uri = "file://artifacts/jaiscape/src/assets/images/explore-4.png"
+type = "image"
+title = "Jaisalmer lake"
+
+[[generated]]
+id = "7CTCE31g5JbUr6msDDmVt"
+uri = "file://artifacts/jaiscape/src/assets/images/explore-5.png"
+type = "image"
+title = "Jaisalmer fort inside"
+
+[[generated]]
+id = "zbL3o_fajtpaB9qQWP_iX"
+uri = "file://artifacts/jaiscape/src/assets/images/explore-6.png"
+type = "image"
+title = "Jaisalmer local market"
+
+[[generated]]
+id = "6WvHbm1prJMUgz_GW_N47"
+uri = "file://artifacts/jaiscape/src/assets/images/explore-7.png"
+type = "image"
+title = "Jaisalmer camel safari"
+
+[[generated]]
+id = "vdGWCrRuNwEHPqHbbBWg5"
+uri = "file://artifacts/jaiscape/src/assets/images/explore-8.png"
+type = "image"
+title = "Jaisalmer dune camp"
+
+[[generated]]
+id = "p5QlbJOmzbOIDQYHdVc6s"
+uri = "file://artifacts/jaiscape/src/assets/images/hidden-1.png"
+type = "image"
+title = "Secret rooftop Jaisalmer"
+
+[[generated]]
+id = "uo18MDWqxRkUp9tOK8wby"
+uri = "file://artifacts/jaiscape/src/assets/images/hidden-2.png"
+type = "image"
+title = "Ancient stepwell Jaisalmer"
+
+[[generated]]
+id = "mDg6noY76_SRxv4PR5jGQ"
+uri = "file://artifacts/jaiscape/src/assets/images/hidden-3.png"
+type = "image"
+title = "Desert village Jaisalmer"
+
+[[generated]]
+id = "dYNp7S224lc46CHI5vhKE"
+uri = "file://artifacts/jaiscape/src/assets/images/hidden-4.png"
+type = "image"
+title = "Old haveli courtyard Jaisalmer"
+
+[[generated]]
+id = "fc2aExdC_HLv9gE1Mzfu4"
+uri = "file://artifacts/jaiscape/src/assets/images/hidden-5.png"
+type = "image"
+title = "Sand art installation Jaisalmer"
+
+[[generated]]
+id = "_8HZPDSRCck_ZWJN33EMk"
+uri = "file://artifacts/jaiscape/src/assets/images/hidden-6.png"
+type = "image"
+title = "Star gazing desert Jaisalmer"
+
+[[generated]]
+id = "ZnLfX0o9nGsNJzpe8mVks"
+uri = "file://artifacts/jaiscape/src/assets/images/camp-1.png"
+type = "image"
+title = "Luxury tent exterior Jaisalmer"
+
+[[generated]]
+id = "dKS3TdEzPlvgATuiM2xLZ"
+uri = "file://artifacts/jaiscape/src/assets/images/camp-2.png"
+type = "image"
+title = "Desert camp bonfire Jaisalmer"
+
+[[generated]]
+id = "Ne0yN0Z7ori1uvdhLyOC2"
+uri = "file://artifacts/jaiscape/src/assets/images/camp-3.png"
+type = "image"
+title = "Starry night desert camp Jaisalmer"
+
+[[generated]]
+id = "CZVf9udcHJ6f2kHtpjgVs"
+uri = "file://artifacts/jaiscape/src/assets/images/camp-4.png"
+type = "image"
+title = "Luxury camp interior Jaisalmer"
