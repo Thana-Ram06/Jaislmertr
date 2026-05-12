@@ -10,6 +10,13 @@ import HiddenPlaces from "@/pages/HiddenPlaces";
 import DesertCamps from "@/pages/DesertCamps";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import Partner from "@/pages/Partner";
+
+import JaisalmerFort from "@/pages/places/JaisalmerFort";
+import SamSandDunes from "@/pages/places/SamSandDunes";
+import GadisarLake from "@/pages/places/GadisarLake";
+import KuldharaVillage from "@/pages/places/KuldharaVillage";
+import PatwonHaveli from "@/pages/places/PatwonHaveli";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +29,14 @@ function Router() {
       <Route path="/desert-camps" component={DesertCamps} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/partner" component={Partner} />
+
+      <Route path="/places/jaisalmer-fort" component={JaisalmerFort} />
+      <Route path="/places/sam-sand-dunes" component={SamSandDunes} />
+      <Route path="/places/gadisar-lake" component={GadisarLake} />
+      <Route path="/places/kuldhara-village" component={KuldharaVillage} />
+      <Route path="/places/patwon-ki-haveli" component={PatwonHaveli} />
+
       <Route component={NotFound} />
     </Switch>
   );

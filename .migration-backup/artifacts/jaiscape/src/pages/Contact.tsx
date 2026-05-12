@@ -19,14 +19,10 @@ export default function Contact() {
   
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      message: "",
-    },
+    defaultValues: { name: "", email: "", message: "" },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  function onSubmit(_values: z.infer<typeof formSchema>) {
     toast({
       title: "Message Sent",
       description: "We will get back to you shortly.",
@@ -52,18 +48,9 @@ export default function Contact() {
               <div className="space-y-8">
                 <div>
                   <h4 className="text-sm tracking-widest uppercase text-[#C8A96B] mb-2">Email</h4>
-                  <p className="text-lg text-foreground">hello@jaiscape.com</p>
-                </div>
-                <div>
-                  <h4 className="text-sm tracking-widest uppercase text-[#C8A96B] mb-2">Phone</h4>
-                  <p className="text-lg text-foreground">+91 98765 43210</p>
-                </div>
-                <div>
-                  <h4 className="text-sm tracking-widest uppercase text-[#C8A96B] mb-2">Location</h4>
-                  <p className="text-lg text-foreground leading-relaxed">
-                    Fort Road, Jaisalmer,<br/>
-                    Rajasthan 345001, India
-                  </p>
+                  <a href="mailto:hellojaiscape@gmail.com" className="text-lg text-foreground hover:text-[#C8A96B] transition-colors">
+                    hellojaiscape@gmail.com
+                  </a>
                 </div>
               </div>
             </div>
@@ -89,7 +76,6 @@ export default function Contact() {
                       </FormItem>
                     )}
                   />
-
                   <FormField
                     control={form.control}
                     name="email"
@@ -107,7 +93,6 @@ export default function Contact() {
                       </FormItem>
                     )}
                   />
-
                   <FormField
                     control={form.control}
                     name="message"
@@ -125,14 +110,12 @@ export default function Contact() {
                       </FormItem>
                     )}
                   />
-
                   <Button type="submit" className="w-full bg-[#C8A96B] text-black hover:bg-[#C8A96B]/90 h-14 text-lg rounded-none mt-4" data-testid="submit-contact">
                     Send Message
                   </Button>
                 </form>
               </Form>
             </div>
-
           </div>
         </div>
       </div>
