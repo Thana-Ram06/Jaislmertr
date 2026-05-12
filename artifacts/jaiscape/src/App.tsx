@@ -42,6 +42,7 @@ import DussehraChowk from "@/pages/places/DussehraChowk";
 import ManakChowk from "@/pages/places/ManakChowk";
 import WindPark from "@/pages/places/WindPark";
 import MoolSagar from "@/pages/places/MoolSagar";
+import PromoVideo from "@/pages/PromoVideo";
 
 const queryClient = new QueryClient();
 
@@ -86,6 +87,8 @@ function Router() {
       <Route path="/places/manak-chowk" component={ManakChowk} />
       <Route path="/places/wind-park" component={WindPark} />
       <Route path="/places/mool-sagar" component={MoolSagar} />
+
+      <Route path="/promo" component={PromoVideo} />
 
       <Route component={NotFound} />
     </Switch>

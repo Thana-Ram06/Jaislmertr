@@ -310,4 +310,10 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+  .bg-bg-dark { background-color: #0d0c0a; }
+  .text-text-primary { color: #EAE8E3; }
+  .text-text-secondary { color: #A3A19C; }
+  .font-display { font-family: 'Instrument Serif', serif; }
+  .font-body { font-family: 'Inter', sans-serif; }
 }

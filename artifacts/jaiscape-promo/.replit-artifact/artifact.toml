@@ -1,0 +1,31 @@
+kind = "video"
+previewPath = "/jaiscape-promo/"
+title = "Jaiscape Promo Video"
+version = "1.0.0"
+id = "artifacts/jaiscape-promo"
+router = "path"
+
+[[integratedSkills]]
+name = "video-js"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/jaiscape-promo/" ]
+localPort = 25938
+
+[services.development]
+run = "pnpm --filter @workspace/jaiscape-promo run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/jaiscape-promo", "run", "build" ]
+publicDir = "artifacts/jaiscape-promo/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25938"
+BASE_PATH = "/jaiscape-promo/"
