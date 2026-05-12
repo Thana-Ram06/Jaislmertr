@@ -1,6 +1,6 @@
 {
   "outputDirectory": "dist",
-  "framework": null,
+  "buildCommand": "pnpm --filter @workspace/jaiscape run build",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
