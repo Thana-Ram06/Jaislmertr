@@ -113,6 +113,7 @@ export default function Home() {
       .join(". ");
 
     let buffer = "";
+    let lineBuffer = "";
 
     try {
       const response = await fetch("/api/itinerary/generate", {
@@ -131,8 +132,10 @@ export default function Home() {
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
-        const text = decoder.decode(value, { stream: true });
-        for (const line of text.split("\n")) {
+        lineBuffer += decoder.decode(value, { stream: true });
+        const lines = lineBuffer.split("\n");
+        lineBuffer = lines.pop() ?? "";
+        for (const line of lines) {
           if (!line.startsWith("data: ")) continue;
           try {
             const data = JSON.parse(line.slice(6));
