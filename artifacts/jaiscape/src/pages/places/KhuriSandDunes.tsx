@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/reel-dunes.png";
+import heroImg from "@/assets/images/place-khuri-sand-dunes.png";
 import img2 from "@/assets/images/hero-dunes.png";
 import img3 from "@/assets/images/card-sunset.png";
 import img4 from "@/assets/images/grid-dunes.png";
@@ -11,7 +11,7 @@ export default function KhuriSandDunes() {
       name="Khuri Sand Dunes"
       location="45km Southwest of Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Khuri Sand Dunes are the Thar Desert's best-kept secret — a vast and largely undeveloped dune field 45km southwest of Jaisalmer that offers the authentic desert experience that Sam Sand Dunes once provided before mass tourism arrived. The village of Khuri sits at the edge of a rippling sea of sand where the dunes are taller, the colours more saturated, and the crowds almost non-existent.",
         "What distinguishes Khuri from its more famous counterpart at Sam is the quality of solitude available here. Walk 15 minutes from the village and you are entirely alone in an ocean of sand — no jeep tracks, no competing camp music, no tourist infrastructure visible in any direction. The silence is profound, broken only by the wind reshaping the dune crests into new geometries with each passing hour.",

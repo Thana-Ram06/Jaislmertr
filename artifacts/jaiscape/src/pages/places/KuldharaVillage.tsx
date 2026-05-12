@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowLeft, MapPin, Clock, Camera, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import exp3 from "@/assets/images/explore-3.png";
+import placeImg from "@/assets/images/place-kuldhara-village.png";
 import h2 from "@/assets/images/hidden-2.png";
 import h3 from "@/assets/images/hidden-3.png";
 import h5 from "@/assets/images/hidden-5.png";
 import gridStreets from "@/assets/images/grid-streets.png";
 import reelRider from "@/assets/images/reel-rider.png";
 
-const gallery = [exp3, h2, h3, h5, gridStreets, reelRider];
+const gallery = [placeImg, h2, h3, h5, gridStreets, reelRider];
 
 const experiences = [
   { title: "Guided Mystery Walk", desc: "Walk the abandoned streets of Kuldhara with a local historian who narrates the village's untold story.", tag: "History Tour" },
@@ -24,7 +24,7 @@ export default function KuldharaVillage() {
     <Layout>
       <div className="bg-[#0B0B0B] min-h-screen">
         <div className="relative h-[70vh] w-full overflow-hidden flex items-end">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${exp3})` }} />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${placeImg})` }} />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/30 to-transparent" />
           <div className="relative z-10 container mx-auto px-6 pb-16">
             <Link href="/explore">

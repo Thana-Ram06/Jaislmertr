@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/about-hero.png";
+import heroImg from "@/assets/images/place-government-museum.png";
 import img2 from "@/assets/images/hidden-3.png";
 import img3 from "@/assets/images/hidden-6.png";
 import img4 from "@/assets/images/explore-8.png";
@@ -11,7 +11,7 @@ export default function GovernmentMuseum() {
       name="Government Museum"
       location="Near Gadisar Road, Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "The Government Museum of Jaisalmer, maintained by the Rajasthan State Government, houses an important collection of archaeological finds, fossils, medieval sculptures, and folk art that traces the history of the Jaisalmer region from prehistoric times to the Rajput era. Though modest in scale compared to the great museums of Jaipur and Jodhpur, the collection contains items of real scholarly significance — many discovered during construction work in the surrounding desert over the past century.",
         "The fossil section is particularly noteworthy: the museum holds specimens from the Akal Wood Fossil Park and other desert sites, including ancient marine fossils that reveal the startling fact that the Thar Desert was once an ocean floor. These geological exhibits offer a perspective on the desert landscape that transforms how you see the dunes and rock formations outside.",

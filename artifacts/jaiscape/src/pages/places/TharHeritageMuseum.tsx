@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/explore-8.png";
+import heroImg from "@/assets/images/place-thar-heritage-museum.png";
 import img2 from "@/assets/images/hidden-4.png";
 import img3 from "@/assets/images/about-hero.png";
 import img4 from "@/assets/images/hidden-6.png";
@@ -11,7 +11,7 @@ export default function TharHeritageMuseum() {
       name="Thar Heritage Museum"
       location="Court Road, Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "The Thar Heritage Museum is a remarkable private museum housed in a beautifully restored haveli in the heart of Jaisalmer's old city. Founded and curated by historian L.N. Khatri, the museum is a labour of love spanning decades of research and collection — an intimate window into the domestic, religious, and artistic life of the Thar Desert's communities across five centuries.",
         "The collection is organised around the rhythms of desert life: the tools and vessels of nomadic existence, the ornaments and textiles of wedding ceremonies, the weapons of tribal warriors, and the sacred objects of religious practice. Unlike national museums with their glass cases and institutional distance, the Thar Heritage Museum is warm, personal, and curated with the passion of a collector who grew up in this landscape.",

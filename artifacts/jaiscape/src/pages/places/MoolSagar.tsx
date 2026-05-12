@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/hidden-2.png";
+import heroImg from "@/assets/images/place-mool-sagar.png";
 import img2 from "@/assets/images/explore-4.png";
 import img3 from "@/assets/images/hidden-1.png";
 import img4 from "@/assets/images/reel-fire.png";
@@ -11,7 +11,7 @@ export default function MoolSagar() {
       name="Mool Sagar"
       location="9km West of Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Mool Sagar is a hidden garden oasis 9km west of Jaisalmer — a royal pleasure garden built by the Maharawal of Jaisalmer as a summer retreat, centred around a small but remarkably picturesque tank (reservoir) fed by an underground spring. In a desert where water is the rarest luxury, the existence of Mool Sagar — with its clear water, mature trees, and the sound of birds — has a quality almost miraculous.",
         "The garden was laid out in the traditional char-bagh (four-garden) style of Mughal landscaping, with water channels dividing the space into quadrants and a pavilion at the centre. A small but beautifully carved temple dedicated to Lord Shiva stands at the water's edge, its reflection shimmering in the tank. The combination of water, greenery, carved stone, and desert silence makes this one of the most peaceful spots in the Jaisalmer region.",

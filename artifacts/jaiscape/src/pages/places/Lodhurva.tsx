@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/explore-5.png";
+import heroImg from "@/assets/images/place-lodhurva.png";
 import img2 from "@/assets/images/hidden-3.png";
 import img3 from "@/assets/images/grid-walls.png";
 import img4 from "@/assets/images/explore-8.png";
@@ -11,7 +11,7 @@ export default function Lodhurva() {
       name="Lodhurva"
       location="15km from Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Lodhurva is the ancient capital of the Bhati Rajput kingdom — the predecessor city to Jaisalmer, abandoned after repeated Mughal raids in the 11th and 12th centuries. Today, all that remains of the old city are the ruins of the ancient settlement and one extraordinarily beautiful Jain temple complex that survived the centuries, restored to functioning condition and still visited by pilgrims from across Rajasthan.",
         "The Lodhurva Jain Temple is a jewel of desert religious architecture — a complex of golden sandstone shrines with elaborately carved torans (ornamental arches) that frame the entrances in a cascade of floral and figurative decoration. The main shrine houses an ancient black stone idol of Parshvanath, the 23rd Jain tirthankara, that is said to be over 2,000 years old. A sacred natural spring emerges from beneath the temple floor — revered as spiritually significant for centuries.",

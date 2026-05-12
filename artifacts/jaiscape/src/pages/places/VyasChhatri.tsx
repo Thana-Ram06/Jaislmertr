@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/hero-dunes.png";
+import heroImg from "@/assets/images/place-vyas-chhatri.png";
 import img2 from "@/assets/images/card-sunset.png";
 import img3 from "@/assets/images/reel-dunes.png";
 import img4 from "@/assets/images/explore-2.png";
@@ -11,7 +11,7 @@ export default function VyasChhatri() {
       name="Vyas Chhatri"
       location="Northeast Jaisalmer, 1km from Fort"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Vyas Chhatri is Jaisalmer's premier sunset viewpoint — a cluster of ornate cenotaphs (chhatris) dedicated to the Vyas Brahmin community, perched on a low rocky outcrop northeast of the city. The site has been a gathering point for sunset-watchers for centuries, and for good reason: from here, the entire silhouette of Jaisalmer Fort rises against the western sky, turning from gold to copper to dark amber as the sun descends behind the Thar.",
         "The chhatris themselves are beautiful carved sandstone structures — elevated platforms with domed canopies supported by carved pillars. They were built as royal cenotaphs, marking the cremation sites of distinguished Vyas Brahmins who served the Jaisalmer royal court. The architecture is intimate rather than grand, and the site has a contemplative, unhurried quality that the larger tourist attractions lack.",

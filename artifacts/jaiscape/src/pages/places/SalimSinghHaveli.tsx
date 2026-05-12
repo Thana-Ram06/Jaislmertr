@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/hero-fort.png";
+import heroImg from "@/assets/images/place-salim-singh-ki-haveli.png";
 import img2 from "@/assets/images/explore-1.png";
 import img3 from "@/assets/images/reel-towers.png";
 import img4 from "@/assets/images/grid-walls.png";
@@ -11,7 +11,7 @@ export default function SalimSinghHaveli() {
       name="Salim Singh Ki Haveli"
       location="Jaisalmer Old City"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Salim Singh Ki Haveli is one of Jaisalmer's most immediately recognisable buildings — a nine-storey mansion that rises like a ship's prow above the old city's rooftops. Built around 1815 for the powerful prime minister Salim Singh, the haveli's distinctive peacock-shaped top floor — shaped like an outstretched fan of carved blue stone — is unlike anything else in Rajasthan and has become an iconic silhouette on Jaisalmer's skyline.",
         "The haveli's story is inseparable from the darker side of Jaisalmer's history. Salim Singh was a feared administrator known for his cruelty, and legend holds that the local Maharaja refused to allow the haveli to rise higher than the palace, cutting its construction short. Despite this, the building's 38 intricately carved balconies, each different in design, and the extraordinary peacock-arch top floor make it among the most visually inventive havelis in all of India.",

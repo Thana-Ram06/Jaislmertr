@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/hidden-3.png";
+import heroImg from "@/assets/images/place-jain-temples.png";
 import img2 from "@/assets/images/explore-5.png";
 import img3 from "@/assets/images/grid-walls.png";
 import img4 from "@/assets/images/hidden-4.png";
@@ -11,7 +11,7 @@ export default function JainTemples() {
       name="Jain Temples"
       location="Inside Jaisalmer Fort"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Hidden within the winding lanes of Jaisalmer Fort, the Jain Temples are among the most elaborately carved religious structures in all of India. A cluster of seven interconnected temples built between the 12th and 16th centuries, they were commissioned by wealthy Jain merchants who settled in Jaisalmer when the fort was the centre of a thriving Silk Road trade. The merchants' extraordinary prosperity is written in every inch of carved marble and yellow limestone.",
         "The temples are dedicated to Jain tirthankaras — spiritual teachers — and together form one of the finest examples of Dilwara-style temple architecture outside of Mount Abu. The level of craftsmanship is staggering: ceilings covered in interlocking floral patterns so dense that no two panels repeat, pillars where every surface is carved with celestial figures and foliage, and sanctuaries where the air smells of sandalwood and ghee lamps flicker against gold.",

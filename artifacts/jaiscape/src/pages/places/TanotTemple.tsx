@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/hidden-4.png";
+import heroImg from "@/assets/images/place-tanot-mata-temple.png";
 import img2 from "@/assets/images/explore-7.png";
 import img3 from "@/assets/images/explore-8.png";
 import img4 from "@/assets/images/hidden-3.png";
@@ -11,7 +11,7 @@ export default function TanotTemple() {
       name="Tanot Mata Temple"
       location="120km from Jaisalmer, near Pakistan Border"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "The Tanot Mata Temple is one of India's most spiritually powerful and historically charged religious sites — a remote desert temple 120km from Jaisalmer, just 18km from the Pakistan border, that has been worshipped continuously for over 1,200 years. The temple is dedicated to the goddess Tanot Rai, a manifestation of the divine feminine revered throughout the Thar Desert region as a protector of the frontier.",
         "The temple's modern fame rests on a miracle that occurred during the 1971 war with Pakistan. Pakistani forces bombed the temple area with approximately 3,000 shells over multiple days — and according to Indian Army accounts, none of the bombs that landed within the temple compound exploded. The Indian Army, crediting the goddess's protection for this outcome, took over management of the temple following the war's conclusion. Today the temple is administered by the Border Security Force, and unexploded Pakistani shells are displayed in its museum as evidence of the miracle.",

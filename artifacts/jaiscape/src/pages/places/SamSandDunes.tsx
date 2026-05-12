@@ -3,14 +3,13 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowLeft, MapPin, Clock, Camera, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import exp2 from "@/assets/images/explore-2.png";
-import reelDunes from "@/assets/images/reel-dunes.png";
+import placeImg from "@/assets/images/place-sam-sand-dunes.png";
 import heroDunes from "@/assets/images/hero-dunes.png";
 import gridDunes from "@/assets/images/grid-dunes.png";
 import cardSafari from "@/assets/images/card-safari.png";
 import cardSunset from "@/assets/images/card-sunset.png";
 
-const gallery = [reelDunes, heroDunes, gridDunes, cardSafari, cardSunset];
+const gallery = [placeImg, heroDunes, gridDunes, cardSafari, cardSunset];
 
 const experiences = [
   { title: "Private Sunset Safari", desc: "Ride across endless dunes on camelback as the sun melts into the horizon. Champagne served at the ridge.", tag: "Safari" },
@@ -25,7 +24,7 @@ export default function SamSandDunes() {
       <div className="bg-[#0B0B0B] min-h-screen">
         {/* Hero */}
         <div className="relative h-[70vh] w-full overflow-hidden flex items-end">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${reelDunes})` }} />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${placeImg})` }} />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/30 to-transparent" />
           <div className="relative z-10 container mx-auto px-6 pb-16">
             <Link href="/explore">

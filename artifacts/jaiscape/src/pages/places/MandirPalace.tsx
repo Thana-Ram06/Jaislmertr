@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/reel-towers.png";
+import heroImg from "@/assets/images/place-mandir-palace.png";
 import img2 from "@/assets/images/hero-fort.png";
 import img3 from "@/assets/images/explore-1.png";
 import img4 from "@/assets/images/grid-walls.png";
@@ -11,7 +11,7 @@ export default function MandirPalace() {
       name="Mandir Palace"
       location="Jaisalmer City Centre"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Mandir Palace is one of Jaisalmer's grandest royal residences — a magnificent sandstone complex that served as the official palace of the Jaisalmer royal family outside the fort walls. Built across multiple centuries and expanded by successive rulers, its architecture blends Rajput elegance with Mughal-influenced ornamentation, resulting in a building of rare character and historical depth.",
         "The palace complex is centred around a series of courtyards connected by intricately carved archways, with jharokha balconies projecting from each floor. The façade is an extraordinary exercise in sandstone craftsmanship: elephants, peacocks, and floral patterns compete for attention across every surface. The main tower, visible from across the city, has become one of Jaisalmer's defining landmarks.",

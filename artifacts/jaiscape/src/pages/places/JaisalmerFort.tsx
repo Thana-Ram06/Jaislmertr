@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowLeft, MapPin, Clock, Camera, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import exp1 from "@/assets/images/explore-1.png";
+import placeImg from "@/assets/images/place-jaisalmer-fort.png";
 import exp5 from "@/assets/images/explore-5.png";
 import gridWalls from "@/assets/images/grid-walls.png";
 import gridStreets from "@/assets/images/grid-streets.png";
 import cardFort from "@/assets/images/card-fort.png";
 import h3 from "@/assets/images/hidden-3.png";
 
-const gallery = [exp5, gridWalls, gridStreets, cardFort, h3];
+const gallery = [placeImg, exp5, gridWalls, gridStreets, cardFort];
 
 const experiences = [
   { title: "Sunrise Fort Walk", desc: "Private guided walk through the fort's narrow lanes as the golden light hits the sandstone walls.", tag: "Guided Tour" },
@@ -25,7 +25,7 @@ export default function JaisalmerFort() {
       <div className="bg-[#0B0B0B] min-h-screen">
         {/* Hero */}
         <div className="relative h-[70vh] w-full overflow-hidden flex items-end">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${exp1})` }} />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${placeImg})` }} />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/30 to-transparent" />
           <div className="relative z-10 container mx-auto px-6 pb-16">
             <Link href="/explore">

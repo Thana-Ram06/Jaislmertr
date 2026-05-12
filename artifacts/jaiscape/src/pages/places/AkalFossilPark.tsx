@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/hidden-6.png";
+import heroImg from "@/assets/images/place-akal-fossil-park.png";
 import img2 from "@/assets/images/explore-3.png";
 import img3 from "@/assets/images/about-hero.png";
 import img4 from "@/assets/images/explore-8.png";
@@ -11,7 +11,7 @@ export default function AkalFossilPark() {
       name="Akal Wood Fossil Park"
       location="17km from Jaisalmer, Barmer Road"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Akal Wood Fossil Park is one of India's most remarkable and least visited geological wonders — an open-air park where ancient fossilised tree trunks, up to 180 million years old, lie exposed in the desert sand exactly as they fell. Protected since 1974, the park preserves evidence of a Jurassic forest that once stood where the Thar Desert now extends — a fact that makes standing among these petrified logs one of the most mind-expanding experiences in all of Rajasthan.",
         "The fossils are the remains of massive coniferous trees that once grew in a tropical forest environment during the Jurassic period, when this region lay at the edge of the ancient Tethys Sea. As the climate shifted, the trees died and were buried in sediment; over millions of years, mineral-rich groundwater replaced the organic material cell by cell, creating perfect stone replicas of the original wood — some still showing bark texture, growth rings, and branch scars in extraordinary detail.",

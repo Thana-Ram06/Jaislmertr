@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/grid-restaurant.png";
+import heroImg from "@/assets/images/place-dussehra-chowk.png";
 import img2 from "@/assets/images/explore-6.png";
 import img3 from "@/assets/images/hidden-5.png";
 import img4 from "@/assets/images/grid-streets.png";
@@ -11,7 +11,7 @@ export default function DussehraChowk() {
       name="Dussehra Chowk"
       location="Inside Jaisalmer Fort"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Dussehra Chowk is the ceremonial heart of Jaisalmer Fort — a large open square flanked by the Raj Mahal (Royal Palace) on one side and a collection of carved havelis and temples on the other. Named for the Dussehra festival at which the Maharaja would receive his subjects and conduct royal ceremonies, the chowk is the social and historical centre of the living fort community.",
         "The square comes alive at all hours: in the morning, local residents cross it on their daily errands; in the afternoon, it fills with tourists exploring the fort; in the evening, it becomes an outdoor gathering place where chai is served at stone benches, musicians occasionally play, and the fort's warm sandstone glows in the last light. The Raj Mahal's carved facade dominates the northern end — a multi-storey sandstone palace with elaborate jharokha balconies and carved screens.",

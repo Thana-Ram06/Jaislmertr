@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/reel-rider.png";
+import heroImg from "@/assets/images/place-desert-national-park.png";
 import img2 from "@/assets/images/hero-dunes.png";
 import img3 from "@/assets/images/grid-dunes.png";
 import img4 from "@/assets/images/grid-camel.png";
@@ -11,7 +11,7 @@ export default function DesertNationalPark() {
       name="Desert National Park"
       location="40km from Jaisalmer, via Sam"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "The Desert National Park is one of India's largest national parks — a vast protected area of 3,162 square kilometres encompassing dunes, rocky terrain, salt flats, and sparse desert scrubland that together form one of the most biodiverse desert ecosystems in Asia. Established in 1980, the park protects a landscape that has remained largely unchanged for millennia, home to species found nowhere else on earth.",
         "The park's most celebrated resident is the Great Indian Bustard — one of the world's heaviest flying birds and now critically endangered, with fewer than 150 individuals surviving. The open desert grasslands of the park are among the last places on earth where these extraordinary birds can be reliably seen. Winter mornings are the best time to observe them on the open flats between Sam and Sudasari.",

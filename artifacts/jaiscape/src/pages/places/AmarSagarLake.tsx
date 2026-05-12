@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/hidden-1.png";
+import heroImg from "@/assets/images/place-amar-sagar-lake.png";
 import img2 from "@/assets/images/explore-4.png";
 import img3 from "@/assets/images/hidden-2.png";
 import img4 from "@/assets/images/reel-fire.png";
@@ -11,7 +11,7 @@ export default function AmarSagarLake() {
       name="Amar Sagar Lake"
       location="7km West of Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Amar Sagar is a serene and largely undiscovered reservoir 7km west of Jaisalmer, fringed by carved temples and the ruins of a royal garden complex built by Maharawal Akhai Singh in the 18th century. Unlike the more visited Gadisar Lake, Amar Sagar retains a quality of quietude that makes it one of the Thar Desert's most meditative water bodies — a place where the reflection of carved sandstone ghats in still water creates an image of extraordinary beauty.",
         "The lake is surrounded by a collection of small temples and carved cenotaphs in various states of preservation, their stone facades weathered by desert wind into organic, almost sculptural forms. A large ornate step-well (baoli) is accessible from the lake's edge — its carved interior, descending in stages to the waterline, is one of the finest examples of Rajput water architecture in the region.",

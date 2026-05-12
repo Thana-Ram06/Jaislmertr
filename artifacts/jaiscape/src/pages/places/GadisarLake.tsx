@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowLeft, MapPin, Clock, Camera, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import exp4 from "@/assets/images/explore-4.png";
+import placeImg from "@/assets/images/place-gadisar-lake.png";
 import h1 from "@/assets/images/hidden-1.png";
 import h4 from "@/assets/images/hidden-4.png";
 import h6 from "@/assets/images/hidden-6.png";
 import reelTowers from "@/assets/images/reel-towers.png";
 import gridCamp from "@/assets/images/grid-camp.png";
 
-const gallery = [exp4, h1, h4, h6, reelTowers, gridCamp];
+const gallery = [placeImg, h1, h4, h6, reelTowers, gridCamp];
 
 const experiences = [
   { title: "Sunrise Boat Ride", desc: "Glide across the still waters at first light with migratory birds overhead and the fort shimmering in the distance.", tag: "Boat Ride" },
@@ -24,7 +24,7 @@ export default function GadisarLake() {
     <Layout>
       <div className="bg-[#0B0B0B] min-h-screen">
         <div className="relative h-[70vh] w-full overflow-hidden flex items-end">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${exp4})` }} />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${placeImg})` }} />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/30 to-transparent" />
           <div className="relative z-10 container mx-auto px-6 pb-16">
             <Link href="/explore">

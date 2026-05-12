@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowLeft, MapPin, Clock, Camera, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import exp5 from "@/assets/images/explore-5.png";
+import placeImg from "@/assets/images/place-patwon-ki-haveli.png";
 import gridWalls from "@/assets/images/grid-walls.png";
 import h3 from "@/assets/images/hidden-3.png";
 import h4 from "@/assets/images/hidden-4.png";
 import cardFort from "@/assets/images/card-fort.png";
 import gridStreets from "@/assets/images/grid-streets.png";
 
-const gallery = [exp5, gridWalls, h3, h4, cardFort, gridStreets];
+const gallery = [placeImg, gridWalls, h3, h4, cardFort, gridStreets];
 
 const experiences = [
   { title: "Guided Haveli Tour", desc: "Private tour with an art historian through all five interconnected mansions — including rooms rarely shown to visitors.", tag: "Guided Tour" },
@@ -24,7 +24,7 @@ export default function PatwonHaveli() {
     <Layout>
       <div className="bg-[#0B0B0B] min-h-screen">
         <div className="relative h-[70vh] w-full overflow-hidden flex items-end">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${exp5})` }} />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${placeImg})` }} />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/30 to-transparent" />
           <div className="relative z-10 container mx-auto px-6 pb-16">
             <Link href="/explore">

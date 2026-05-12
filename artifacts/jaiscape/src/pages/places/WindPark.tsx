@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/about-hero.png";
+import heroImg from "@/assets/images/place-wind-park.png";
 import img2 from "@/assets/images/hero-dunes.png";
 import img3 from "@/assets/images/explore-3.png";
 import img4 from "@/assets/images/reel-rider.png";
@@ -11,7 +11,7 @@ export default function WindPark() {
       name="Wind Park"
       location="Amarsagar Road, Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "The Jaisalmer Wind Park is one of the largest wind energy installations in Asia — a vast field of white turbines rising from the flat desert plain outside Jaisalmer that has become, unexpectedly, one of the region's most visually striking and thought-provoking destinations. Established in the 1990s when Jaisalmer was identified as one of India's windiest locations, the park now spans thousands of hectares and hosts hundreds of turbines from multiple energy companies.",
         "What makes the Wind Park compelling is the surreal visual contrast it creates: enormous white turbine towers rising from the ancient golden desert, blades turning silently above camels and desert scrub. The scale of the installation — some turbines stand 100 metres tall — creates a landscape unlike anything else in Rajasthan, and the juxtaposition of clean energy technology with the timeless desert environment has a particular visual and conceptual power.",

@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/explore-3.png";
+import heroImg from "@/assets/images/place-bada-bagh.png";
 import img2 from "@/assets/images/hidden-2.png";
 import img3 from "@/assets/images/about-hero.png";
 import img4 from "@/assets/images/hidden-5.png";
@@ -11,7 +11,7 @@ export default function BadaBagh() {
       name="Bada Bagh"
       location="6km North of Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Bada Bagh — the 'Great Garden' — is a haunting and beautiful complex of royal cenotaphs set amid a grove of trees on the edge of the Thar Desert, 6km north of Jaisalmer. Built for the rulers and nobles of the Bhati Rajput dynasty from the 16th century onward, the complex contains dozens of chhatris (cenotaphs) arranged in loose clusters across the sand, each marking a royal cremation site.",
         "The cenotaphs range from simple domed platforms to elaborate multi-pillared pavilions with carved equestrian panels depicting the ruler on horseback — a tradition that continued until the last maharaja. The sandstone has weathered over centuries, and many of the older structures lean at angles or have partially collapsed, giving the site an atmosphere of dignified ruin that is profoundly atmospheric, especially at dawn or dusk.",

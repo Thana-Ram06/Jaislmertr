@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/grid-walls.png";
+import heroImg from "@/assets/images/place-nathmal-ki-haveli.png";
 import img2 from "@/assets/images/explore-5.png";
 import img3 from "@/assets/images/grid-streets.png";
 import img4 from "@/assets/images/card-fort.png";
@@ -11,7 +11,7 @@ export default function NathmalHaveli() {
       name="Nathmal Ki Haveli"
       location="Jaisalmer Old City"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Nathmal Ki Haveli is one of Jaisalmer's most captivating architectural treasures — a 19th-century prime minister's mansion that stands as a testament to the extraordinary skill of the city's stone carvers. Built in 1885 for Prime Minister Diwan Mohata, the haveli was commissioned to two brothers who worked simultaneously, each on one half of the façade, creating an almost-symmetrical masterpiece with subtle artistic differences that reveal close inspection.",
         "The haveli's five-storey yellow sandstone façade is a riot of intricate carvings — floral motifs, elephants, horses, peacocks, miniature camels, and European-influenced flourishes reflecting the era's cosmopolitan tastes. The jharokha windows overflow with lacework so fine it looks like embroidered fabric rather than stone. Every surface tells a story of a dynasty at the height of its power.",

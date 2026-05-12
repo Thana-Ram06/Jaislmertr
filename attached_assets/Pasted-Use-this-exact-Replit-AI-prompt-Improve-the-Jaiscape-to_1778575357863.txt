@@ -1,0 +1,127 @@
+Use this exact Replit AI prompt:
+
+⸻
+
+Improve the Jaiscape tourism website image system for all 30 tourism places. Currently random generic images are being used. This should be fixed completely.
+
+IMPORTANT:
+Do NOT use unrelated random AI images anymore.
+
+NEW IMAGE SYSTEM REQUIREMENTS:
+
+For EVERY tourism place:
+
+1. First research and understand the REAL visual appearance of the actual location.
+2. Analyze:
+
+* architecture
+* colors
+* environment
+* desert landscape
+* historical style
+* lighting
+* textures
+* atmosphere
+
+3. Then generate or select AI images that closely match the REAL appearance of that specific location.
+
+The goal is:
+
+* realistic cinematic tourism visuals
+* accurate representation
+* premium luxury photography style
+* immersive travel experience
+
+VERY IMPORTANT:
+Each location must visually resemble its real-world counterpart.
+
+EXAMPLES:
+
+1. Jaisalmer Fort
+
+* Golden yellow sandstone fort
+* Massive fort walls
+* Dense fort architecture
+* Desert backdrop
+* Sunset golden lighting
+
+2. Gadisar Lake
+
+* Calm water reservoir
+* Traditional chhatri architecture
+* Temple structures near lake
+* Reflections in water
+* Peaceful atmosphere
+
+3. Patwon Ki Haveli
+
+* Intricate carvings
+* Detailed sandstone facade
+* Narrow heritage street
+* Historic haveli architecture
+
+4. Sam Sand Dunes
+
+* Large golden sand dunes
+* Camel safari
+* Desert camp atmosphere
+* Sunset cinematic vibe
+
+5. Kuldhara Village
+
+* Abandoned ruins
+* Desert ghost village
+* Broken sandstone houses
+* Atmospheric lighting
+
+6. Tanot Mata Temple
+
+* Border-region temple aesthetics
+* Desert military surroundings
+* Spiritual atmosphere
+
+IMAGE STYLE REQUIREMENTS:
+
+* cinematic
+* ultra realistic
+* luxury travel photography
+* warm desert tones
+* golden hour lighting
+* premium tourism advertisement style
+* immersive composition
+* modern travel brand aesthetics
+
+DO NOT:
+
+* use generic fantasy AI images
+* use incorrect monuments
+* use unrelated desert scenes
+* repeat same images for multiple places
+* use low-quality placeholders
+
+FOR EVERY PLACE PAGE:
+Add:
+
+* accurate hero image
+* accurate gallery images
+* immersive travel visuals
+* location-specific atmosphere
+
+TECHNICAL REQUIREMENTS:
+
+* Use next/image optimization
+* Lazy load galleries
+* Maintain fast performance
+* Keep Vercel compatibility
+* Preserve Lighthouse performance
+* Avoid layout shifts
+
+IMPORTANT:
+Before assigning or generating images for a place:
+
+* understand the real location visually
+* match architecture and geography accurately
+* maintain realism and authenticity
+
+FINAL GOAL:
+The Jaiscape website should feel like a real premium tourism platform where every place visually resembles the real Jaisalmer location while still maintaining a cinematic luxury travel aesthetic.

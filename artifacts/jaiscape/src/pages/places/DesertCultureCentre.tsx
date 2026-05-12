@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/explore-7.png";
+import heroImg from "@/assets/images/place-desert-culture-centre.png";
 import img2 from "@/assets/images/hidden-5.png";
 import img3 from "@/assets/images/camp-1.png";
 import img4 from "@/assets/images/about-hero.png";
@@ -11,7 +11,7 @@ export default function DesertCultureCentre() {
       name="Desert Culture Centre"
       location="Near Gadisar Lake, Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "The Desert Culture Centre and Museum is one of Jaisalmer's most intimate cultural institutions — a privately funded museum dedicated to preserving and celebrating the traditional arts, crafts, music, and folklore of the Thar Desert region. Founded by the cultural historian and folklorist Nakulam Vyaas, the centre has grown over the decades into a remarkable repository of Rajasthani desert culture that mainstream museums rarely document.",
         "The collection spans traditional instruments of desert music — the khartal, morchang, rawanhattha, and the distinctive kamayacha fiddle — alongside folk costumes, camel decorations, embroidered textiles, and household objects that reveal the ingenuity of desert life. Each section is annotated with contextual information that situates these objects within the social fabric of the communities that made them.",

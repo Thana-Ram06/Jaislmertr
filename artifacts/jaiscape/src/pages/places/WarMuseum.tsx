@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/explore-6.png";
+import heroImg from "@/assets/images/place-war-museum.png";
 import img2 from "@/assets/images/about-hero.png";
 import img3 from "@/assets/images/hidden-6.png";
 import img4 from "@/assets/images/explore-7.png";
@@ -11,7 +11,7 @@ export default function WarMuseum() {
       name="Jaisalmer War Museum"
       location="NH11, 10km from Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "The Jaisalmer War Museum stands as a powerful tribute to the soldiers of the Indian Army who defended the nation's western frontier during the 1965 and 1971 wars with Pakistan. Established by the Indian Army and inaugurated in 2015, the museum is set on the road to Longewala — the site of one of India's most celebrated military victories — and tells the story of the Thar Desert's strategic role in modern Indian military history.",
         "The museum's outdoor display is its most dramatic feature: a full collection of decommissioned tanks, artillery guns, fighter jets, and armoured vehicles from both wars are arranged across a landscaped ground, creating a landscape of extraordinary historical weight. Walk among Patton tanks captured from the Pakistani Army in 1971 and the Indian Air Force Hawker Hunters that turned the tide at Longewala, and the scale of the battles comes alive.",

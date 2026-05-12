@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/hero-fort.png";
+import heroImg from "@/assets/images/place-pokhran-fort.png";
 import img2 from "@/assets/images/explore-1.png";
 import img3 from "@/assets/images/grid-walls.png";
 import img4 from "@/assets/images/card-fort.png";
@@ -11,7 +11,7 @@ export default function PokhranFort() {
       name="Pokhran Fort"
       location="110km East of Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Pokhran Fort is a grand 14th-century Rajput fortification that rises dramatically above the small desert town of Pokhran, 110km east of Jaisalmer on the highway to Jodhpur. Built by the Bhati Rajput rulers as a waystation fortress on the desert trade route, the fort's massive yellow sandstone walls and soaring towers have watched over the Thar Desert for seven centuries — and witnessed some of the most consequential moments in modern Indian history.",
         "Pokhran is the site of India's nuclear tests — Operation Smiling Buddha in 1974 and Operation Shakti in 1998 — conducted in the desert test ranges just a few kilometres from the fort. The fort itself predates these events by six centuries and is a remarkable piece of medieval military architecture: its walls are 5 metres thick in places, its gateways flanked by towers with cannon mounts still visible, and its inner courtyard holds a palace complex decorated with murals of hunting scenes and royal portraits.",

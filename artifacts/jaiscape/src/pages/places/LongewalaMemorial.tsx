@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/hidden-5.png";
+import heroImg from "@/assets/images/place-longewala-war-memorial.png";
 import img2 from "@/assets/images/explore-6.png";
 import img3 from "@/assets/images/about-hero.png";
 import img4 from "@/assets/images/hidden-6.png";
@@ -11,7 +11,7 @@ export default function LongewalaMemorial() {
       name="Longewala War Memorial"
       location="120km from Jaisalmer, Near Tanot"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "The Longewala War Memorial marks the site of one of the most decisive and dramatic battles of the 1971 India-Pakistan war — a confrontation that has been immortalised in the acclaimed Bollywood film 'Border' (1997) and remains a defining chapter in Indian military history. On the night of 4–5 December 1971, a single company of 120 soldiers from the 23rd Punjab Regiment held off a Pakistani armoured column of 2,000 troops and 45 tanks, armed with only two rocket launchers and a single anti-tank recoilless gun.",
         "The Pakistani advance was halted by the desert terrain and the soldiers' extraordinary courage through the night, and destroyed at dawn when Indian Air Force Hawker Hunter jets arrived to strafe the column. The battle lasted 12 hours and ended with the destruction of 36 Pakistani tanks and over 200 vehicles, with the loss of only two Indian soldiers. It was a turning point in the western theatre of the 1971 war.",

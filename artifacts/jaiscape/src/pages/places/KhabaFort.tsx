@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/card-fort.png";
+import heroImg from "@/assets/images/place-khaba-fort.png";
 import img2 from "@/assets/images/hero-fort.png";
 import img3 from "@/assets/images/grid-walls.png";
 import img4 from "@/assets/images/explore-1.png";
@@ -11,7 +11,7 @@ export default function KhabaFort() {
       name="Khaba Fort"
       location="25km from Jaisalmer, near Kuldhara"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Khaba Fort is a hauntingly preserved medieval fortification rising from the flat desert plain 25km from Jaisalmer, adjacent to the abandoned village of Khaba — a settlement that shares the same mysterious desertion story as the more famous Kuldhara Village. The fort itself dates to the 14th century and served as a protective stronghold for the surrounding farming and herding communities of the Paliwal Brahmins.",
         "Unlike Jaisalmer Fort with its busy tourist circuit, Khaba is largely unvisited — which is precisely what makes it so remarkable. You can walk through its rooms, climb its watchtowers, and stand on its ramparts in near-total silence, with nothing but sand and desert scrub stretching to the horizon. The wind in the empty chambers has a particular sound, and the quality of solitude here is profound.",

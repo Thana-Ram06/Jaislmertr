@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/grid-streets.png";
+import heroImg from "@/assets/images/place-manak-chowk.png";
 import img2 from "@/assets/images/grid-restaurant.png";
 import img3 from "@/assets/images/explore-6.png";
 import img4 from "@/assets/images/card-cafe.png";
@@ -11,7 +11,7 @@ export default function ManakChowk() {
       name="Manak Chowk"
       location="Old City, Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Manak Chowk is the commercial and cultural heartbeat of Jaisalmer's old city — a busy market square just outside the fort walls where the daily life of the golden city converges in a riot of colour, sound, and activity. Named after a revered local figure, the chowk is surrounded by centuries-old havelis that have been adapted over time into shops selling everything from Rajasthani textiles and silver jewellery to spices, handicrafts, and street food.",
         "The square is at its most vibrant in the morning, when vendors arrange their wares and the old city awakens. Fabric merchants hang embroidered shawls from their upper floors, silver jewellers arrange ancestral pieces alongside modern work, and the smell of chai and freshly fried kachori drifts from small kitchens. The afternoon sees a quieter pace, while evenings bring a different energy — lit by warm light, with tourists and locals mingling around street food stalls.",

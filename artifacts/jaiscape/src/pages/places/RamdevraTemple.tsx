@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/hidden-4.png";
+import heroImg from "@/assets/images/place-ramdevra-temple.png";
 import img2 from "@/assets/images/explore-7.png";
 import img3 from "@/assets/images/explore-8.png";
 import img4 from "@/assets/images/hidden-5.png";
@@ -11,7 +11,7 @@ export default function RamdevraTemple() {
       name="Ramdevra Temple"
       location="12km from Pokhran, 110km from Jaisalmer"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "Ramdevra is one of the most important pilgrimage sites in Rajasthan — a temple complex dedicated to Baba Ramdev, a 15th-century mystic saint revered equally by Hindus and Muslims across western Rajasthan, Sindh, and Gujarat. Born into a Rajput family, Ramdev renounced royal life to devote himself to the poor, the marginalized, and the suffering, performing miracles that his devotees believe continue to this day.",
         "The temple town of Ramdevra is located near Pokhran, 110km east of Jaisalmer, and attracts millions of pilgrims annually — particularly during the Ramdev Jayanti festival in August and September, when the roads fill with devotees walking barefoot for hundreds of kilometres. The primary temple is a grand white marble structure housing the samadhi (tomb) of Baba Ramdev, perpetually fragrant with incense and flowers.",

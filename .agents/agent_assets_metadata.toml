@@ -1,0 +1,182 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "tEKeI2Uq_S10yvUJ1JsGe"
+uri = "file://artifacts/jaiscape/src/assets/images/place-jaisalmer-fort.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "gxgvDOspOwGT8WVKf0QL1"
+uri = "file://artifacts/jaiscape/src/assets/images/place-patwon-ki-haveli.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "dIw57-EhFq50fNLkFvgA1"
+uri = "file://artifacts/jaiscape/src/assets/images/place-gadisar-lake.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "djw1JMV6b_M4bikZow91Y"
+uri = "file://artifacts/jaiscape/src/assets/images/place-nathmal-ki-haveli.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "rFSIkcn-LGVa6el8GKOtO"
+uri = "file://artifacts/jaiscape/src/assets/images/place-salim-singh-ki-haveli.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "I1ic2V_eui6vh0f5yezT4"
+uri = "file://artifacts/jaiscape/src/assets/images/place-jain-temples.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "nWtzFp9jL1QbBCW4uW7WK"
+uri = "file://artifacts/jaiscape/src/assets/images/place-mandir-palace.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "voIfPhtxq92pVBWfdQ87Z"
+uri = "file://artifacts/jaiscape/src/assets/images/place-tazia-tower.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "b922o4x6uSdqstEwREKpi"
+uri = "file://artifacts/jaiscape/src/assets/images/place-vyas-chhatri.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ZSEE9AoN7TlbT4_Wft2Il"
+uri = "file://artifacts/jaiscape/src/assets/images/place-bada-bagh.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "oxKgxS57P0CNjkHo4xu06"
+uri = "file://artifacts/jaiscape/src/assets/images/place-war-museum.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "QC9wxkEXgN30tWg0ca1ao"
+uri = "file://artifacts/jaiscape/src/assets/images/place-desert-culture-centre.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "EmDpB2fHYr55HMZAfny26"
+uri = "file://artifacts/jaiscape/src/assets/images/place-thar-heritage-museum.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Un9o1xtsaTQDBmLUp_Pxz"
+uri = "file://artifacts/jaiscape/src/assets/images/place-amar-sagar-lake.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "IsNTw0UYG0BZAyJS3lGAE"
+uri = "file://artifacts/jaiscape/src/assets/images/place-sam-sand-dunes.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "vVNkKoH6Hj2CMENR0kGGv"
+uri = "file://artifacts/jaiscape/src/assets/images/place-kuldhara-village.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "T1wUDpfnJPZuzL8I8DPTZ"
+uri = "file://artifacts/jaiscape/src/assets/images/place-khaba-fort.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "INQvsiGF68SlWk7tO8z5o"
+uri = "file://artifacts/jaiscape/src/assets/images/place-tanot-mata-temple.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "fzcjkgKLcMDsNl9OrJGKw"
+uri = "file://artifacts/jaiscape/src/assets/images/place-desert-national-park.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "gY72EqiobBlDOpLED2cp_"
+uri = "file://artifacts/jaiscape/src/assets/images/place-longewala-war-memorial.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "t4ITg9P6UD6j4MEQz2AAH"
+uri = "file://artifacts/jaiscape/src/assets/images/place-akal-fossil-park.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "bhBLO5MN28Xixth7HIL8U"
+uri = "file://artifacts/jaiscape/src/assets/images/place-lodhurva.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "R-boOEwAJdG3IzU9taK0R"
+uri = "file://artifacts/jaiscape/src/assets/images/place-khuri-sand-dunes.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "RPCcGsCO9fbYXJpbMxmTf"
+uri = "file://artifacts/jaiscape/src/assets/images/place-ramdevra-temple.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Z9H6_N-kbyoYqefiBm_Vp"
+uri = "file://artifacts/jaiscape/src/assets/images/place-pokhran-fort.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "fgkAK9uaKTm8086Zkwf-L"
+uri = "file://artifacts/jaiscape/src/assets/images/place-dussehra-chowk.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "37oIOtE7UFmuHc430aCyL"
+uri = "file://artifacts/jaiscape/src/assets/images/place-manak-chowk.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "LLem0x5627cXTyNf1uKA2"
+uri = "file://artifacts/jaiscape/src/assets/images/place-wind-park.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "WGlnz4D1Uv8qVUZp-u3hJ"
+uri = "file://artifacts/jaiscape/src/assets/images/place-mool-sagar.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "KAAfNYnXxVc4ZKu0aIr1x"
+uri = "file://artifacts/jaiscape/src/assets/images/place-government-museum.png"
+type = "image"
+title = "generated_image"

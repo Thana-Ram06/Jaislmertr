@@ -1,5 +1,5 @@
 import { PlacePage } from "@/components/PlacePage";
-import heroImg from "@/assets/images/grid-streets.png";
+import heroImg from "@/assets/images/place-tazia-tower.png";
 import img2 from "@/assets/images/hero-fort.png";
 import img3 from "@/assets/images/explore-5.png";
 import img4 from "@/assets/images/reel-towers.png";
@@ -11,7 +11,7 @@ export default function TaziaTower() {
       name="Tazia Tower"
       location="Badal Mahal, Jaisalmer Fort"
       heroImg={heroImg}
-      gallery={[img2, heroImg, img3, img4, img5]}
+      gallery={[heroImg, img2, img3, img4, img5]}
       about={[
         "The Tazia Tower is one of Jaisalmer's most intriguing architectural curiosities — a multi-storey tower attached to the Badal Mahal (Cloud Palace) within the fort complex, decorated with carved stone replicas of tazias: the ornate paper structures carried in Muharram processions by Shia Muslims. That a tower honouring a Muslim tradition was built by a Hindu royal family speaks to the remarkable communal harmony that defined medieval Jaisalmer.",
         "The tower is five storeys of increasingly delicate sandstone work, each floor balconing outward in a different ornamental style. The uppermost floors bear the tazia-inspired canopied structures that give the tower its name — intricately pierced stone lattices that filter the desert light into shadows of extraordinary complexity. At certain angles and times of day, the carved screens glow like lace against the sky.",
