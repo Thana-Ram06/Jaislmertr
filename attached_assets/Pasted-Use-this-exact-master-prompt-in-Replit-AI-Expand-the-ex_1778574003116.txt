@@ -1,0 +1,185 @@
+Use this exact master prompt in Replit AI:
+
+⸻
+
+Expand the existing Jaiscape tourism website by adding all major tourism places of Jaisalmer into the Explore section while keeping ALL current features, UI, animations, and functionality intact. Do NOT remove or replace any existing feature. Only enhance and expand the website content and place system.
+
+IMPORTANT:
+
+* Preserve the current premium cinematic luxury design
+* Keep all old sections/features working
+* Do not remove any current place pages
+* Maintain Next.js 16 + TypeScript + Tailwind CSS architecture
+* Fully Vercel compatible
+* Maintain smooth mobile responsiveness
+* Keep performance optimized
+* Keep the luxury black/gold cinematic aesthetic
+
+MAIN TASK:
+Expand the Explore section and create detailed interactive pages for all major tourism places in Jaisalmer.
+
+IMPORTANT:
+
+* Existing places already added should remain
+* Reorder them according to the sequence below
+* Add missing places
+* Ensure every “View Place” button works correctly
+* Add realistic cinematic AI-style placeholder images
+* Add detailed tourism descriptions for every place
+
+CREATE/EXPAND THESE 30 PLACES IN THIS EXACT ORDER:
+
+1. Jaisalmer Fort
+2. Patwon Ki Haveli
+3. Gadisar Lake
+4. Nathmal Ji Ki Haveli
+5. Salim Singh Ki Haveli
+6. Jain Temples
+7. Mandir Palace
+8. Tazia Tower
+9. Vyas Chhatri
+10. Bada Bagh
+11. Jaisalmer War Museum
+12. Desert Culture Centre
+13. Thar Heritage Museum
+14. Government Museum
+15. Amar Sagar Lake
+16. Sam Sand Dunes
+17. Kuldhara Village
+18. Khaba Fort
+19. Desert National Park
+20. Akal Wood Fossil Park
+21. Khuri Sand Dunes
+22. Tanot Mata Temple
+23. Longewala War Memorial
+24. Lodhurva
+25. Ramdevra Temple
+26. Pokhran Fort
+27. Dussehra Chowk
+28. Manak Chowk
+29. Wind Park
+30. Mool Sagar
+
+FOR EVERY PLACE PAGE ADD:
+
+1. Premium Hero Section
+
+* Large cinematic image
+* Place title
+* Small subtitle
+* Location badge
+* Smooth fade-in animation
+
+2. About This Place
+    Write realistic tourism descriptions for every place.
+    Use informative and immersive travel writing.
+    Do NOT use lorem ipsum.
+3. Image Gallery
+    Add multiple cinematic royalty-free placeholder images.
+    Requirements:
+
+* desert aesthetics
+* golden hour photography
+* luxury cinematic style
+* optimized with next/image
+* responsive gallery layout
+
+4. Location Section
+    Add:
+
+* map preview UI
+* “Open in Maps” button
+* distance info
+* best visiting time
+
+5. Travel Information
+    Add:
+
+* entry fee
+* best season
+* photography tips
+* nearby attractions
+* travel tips
+* ideal visiting hours
+
+6. Experience Cards
+    Create immersive cards such as:
+
+* Camel Safari
+* Rooftop Dining
+* Sunset Point
+* Cultural Experience
+* Photography Spots
+* Desert Camp Experience
+
+7. Smooth Routing
+    Every “View Place” button must:
+
+* work properly
+* open detailed place page
+* have smooth transition animation
+* work on mobile and desktop
+
+8. Explore Section Improvements
+
+* keep premium masonry/grid layout
+* reorder all places exactly as listed above
+* maintain hover effects
+* maintain luxury card styling
+* maintain animations
+
+9. Image Requirements
+    Use highly realistic cinematic AI-style placeholder images matching each location accurately.
+    Examples:
+
+* forts
+* dunes
+* temples
+* lakes
+* war memorials
+* desert landscapes
+* royal architecture
+
+Ensure all images feel:
+
+* premium
+* immersive
+* cinematic
+* luxury travel quality
+
+10. Preserve Existing Features
+    IMPORTANT:
+    Do NOT remove:
+
+* AI Trip Planner
+* Partner With Jaiscape
+* hidden places
+* cinematic sections
+* existing animations
+* social links
+* contact functionality
+* business inquiry system
+* footer
+* navbar
+* mobile responsiveness
+
+11. Performance Optimization
+
+* lazy load galleries
+* use next/image
+* avoid hydration issues
+* optimize animations
+* maintain fast Vercel deployment
+* keep Lighthouse score high
+
+12. Final Goal
+    The final website should feel like a world-class luxury tourism platform for Jaisalmer with:
+
+* fully interactive tourism pages
+* immersive cinematic travel experience
+* realistic content
+* accurate visuals
+* working navigation
+* modern startup-quality polish
+* smooth mobile experience
+* premium global travel brand aesthetics.
