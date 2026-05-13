@@ -1,8 +1,6 @@
 import { ReactNode } from "react";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
-import { DisclaimerModal } from "./AiDisclaimer";
-
 interface LayoutProps {
   children: ReactNode;
 }
@@ -15,7 +13,6 @@ export function Layout({ children }: LayoutProps) {
         {children}
       </main>
       <Footer />
-      <DisclaimerModal />
     </div>
   );
 }

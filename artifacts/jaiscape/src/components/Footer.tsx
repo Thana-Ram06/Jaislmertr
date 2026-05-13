@@ -1,5 +1,6 @@
 import { SiInstagram, SiX, SiYoutube } from "react-icons/si";
 import { Link } from "wouter";
+import { DisclaimerModal } from "@/components/AiDisclaimer";
 
 export function Footer() {
   return (
@@ -81,9 +82,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">© 2026 Jaiscape. All rights reserved.</p>
-          <p className="text-xs text-muted-foreground">Crafted with love for the Golden City</p>
+          <div className="flex items-center gap-4">
+            <DisclaimerModal />
+            <p className="text-xs text-muted-foreground">Crafted with love for the Golden City</p>
+          </div>
         </div>
       </div>
     </footer>

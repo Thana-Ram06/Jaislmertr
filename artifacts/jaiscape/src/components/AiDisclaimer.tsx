@@ -43,14 +43,14 @@ export function DisclaimerModal() {
 
   return (
     <>
-      {/* Floating trigger button */}
+      {/* Footer inline trigger — rendered by Footer component */}
       <button
         onClick={() => setOpen(true)}
         aria-label="View disclaimer"
-        className="fixed bottom-6 right-6 z-40 group flex items-center gap-2 bg-[#0B0B0B]/80 border border-[#C8A96B]/30 backdrop-blur-md px-3 py-2.5 hover:border-[#C8A96B]/60 transition-all duration-300 hover:bg-[#0B0B0B]/95"
+        className="group inline-flex items-center gap-2 border border-[#C8A96B]/20 px-3 py-1.5 hover:border-[#C8A96B]/50 transition-all duration-300"
       >
-        <AlertTriangle size={13} className="text-[#C8A96B]/80 group-hover:text-[#C8A96B] transition-colors" />
-        <span className="text-[10px] font-medium tracking-widest uppercase text-[#C8A96B]/70 group-hover:text-[#C8A96B] transition-colors hidden sm:block">
+        <AlertTriangle size={11} className="text-[#C8A96B]/60 group-hover:text-[#C8A96B] transition-colors" />
+        <span className="text-[10px] font-medium tracking-widest uppercase text-[#C8A96B]/60 group-hover:text-[#C8A96B] transition-colors">
           Disclaimer
         </span>
       </button>
