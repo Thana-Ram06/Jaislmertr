@@ -1,6 +1,5 @@
 import { SiInstagram, SiX, SiYoutube } from "react-icons/si";
 import { Link } from "wouter";
-import { AiDisclaimer } from "@/components/AiDisclaimer";
 
 export function Footer() {
   return (
@@ -80,10 +79,6 @@ export function Footer() {
               </a>
             </div>
           </div>
-        </div>
-
-        <div className="mb-8">
-          <AiDisclaimer variant="footer" />
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">

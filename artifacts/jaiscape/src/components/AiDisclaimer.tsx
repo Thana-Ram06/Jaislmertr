@@ -1,67 +1,135 @@
-import { AlertTriangle } from "lucide-react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { AlertTriangle, X, Info, Clock, Tag, Cloud, CalendarCheck } from "lucide-react";
 
-interface AiDisclaimerProps {
-  variant?: "footer" | "planner" | "place";
-}
+export function DisclaimerModal() {
+  const [open, setOpen] = useState(false);
 
-export function AiDisclaimer({ variant = "footer" }: AiDisclaimerProps) {
-  if (variant === "planner") {
-    return (
-      <div className="border border-[#C8A96B]/20 bg-[#C8A96B]/5 backdrop-blur-sm p-4 flex gap-3 items-start">
-        <AlertTriangle size={14} className="text-[#C8A96B]/70 mt-0.5 shrink-0" />
-        <p className="text-xs text-muted-foreground leading-relaxed">
-          Itineraries are curated guides. Timings, entry fees, and availability may vary — verify locally before visiting.
-        </p>
-      </div>
-    );
-  }
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
-  if (variant === "place") {
-    return (
-      <div className="border border-[#C8A96B]/20 bg-[#C8A96B]/5 backdrop-blur-sm p-4 space-y-2">
-        <div className="flex items-center gap-2">
-          <AlertTriangle size={12} className="text-[#C8A96B]/70 shrink-0" />
-          <p className="text-xs font-medium tracking-widest uppercase text-[#C8A96B]/70">Traveller's Note</p>
-        </div>
-        <ul className="text-xs text-muted-foreground space-y-1.5 leading-relaxed">
-          <li>• Visuals may include AI-generated representations for artistic purposes</li>
-          <li>• Entry timings & fees may change — verify locally</li>
-          <li>• Pricing and availability can vary by season</li>
-          <li>• Weather conditions may affect experiences</li>
-        </ul>
-      </div>
-    );
-  }
+  const items = [
+    {
+      icon: <Info size={14} className="text-[#C8A96B]" />,
+      title: "AI-Generated Visuals",
+      desc: "Some visuals on Jaiscape are AI-generated cinematic representations created for artistic and inspirational purposes. Actual locations, colours, atmosphere, and experiences may differ from what is shown.",
+    },
+    {
+      icon: <Clock size={14} className="text-[#C8A96B]" />,
+      title: "Timings & Access",
+      desc: "Opening hours, entry timings, and site access may change without notice. Always verify locally or with official sources before visiting.",
+    },
+    {
+      icon: <Tag size={14} className="text-[#C8A96B]" />,
+      title: "Pricing & Fees",
+      desc: "Entry fees, camp tariffs, safari costs, and restaurant prices vary by season and operator. Verify current pricing directly with the service provider.",
+    },
+    {
+      icon: <Cloud size={14} className="text-[#C8A96B]" />,
+      title: "Weather Conditions",
+      desc: "Desert weather in Jaisalmer can be extreme. Experiences like dune safaris, outdoor dining, and camel rides may be affected by heat, sandstorms, or rain.",
+    },
+    {
+      icon: <CalendarCheck size={14} className="text-[#C8A96B]" />,
+      title: "Booking Availability",
+      desc: "Camp stays, jeep safaris, and heritage hotel bookings fill up quickly during peak season (Oct–Mar). Availability listed is indicative — pre-book directly to confirm.",
+    },
+  ];
 
   return (
-    <div className="border border-[#C8A96B]/15 bg-[#C8A96B]/5 backdrop-blur-sm p-6 rounded-none">
-      <div className="flex items-start gap-4">
-        <div className="shrink-0 mt-0.5">
-          <div className="w-8 h-8 border border-[#C8A96B]/30 flex items-center justify-center">
-            <AlertTriangle size={14} className="text-[#C8A96B]/80" />
-          </div>
-        </div>
-        <div className="space-y-3">
-          <p className="text-xs font-medium tracking-widest uppercase text-[#C8A96B]/80">
-            Visual & Content Disclaimer
-          </p>
-          <p className="text-xs text-muted-foreground leading-relaxed">
-            Some visuals used on Jaiscape are AI-generated cinematic representations created for artistic and inspirational purposes. Actual locations, colours, atmosphere, and experiences may vary in real life. Travellers are encouraged to verify important travel details independently before visiting.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1 pt-1">
-            {[
-              "Timings may change without notice",
-              "Pricing may vary by season",
-              "Weather may affect experiences",
-              "Booking availability may differ",
-            ].map((note) => (
-              <p key={note} className="text-xs text-muted-foreground/60 flex items-center gap-1.5">
-                <span className="text-[#C8A96B]/40">·</span> {note}
-              </p>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      {/* Floating trigger button */}
+      <button
+        onClick={() => setOpen(true)}
+        aria-label="View disclaimer"
+        className="fixed bottom-6 right-6 z-40 group flex items-center gap-2 bg-[#0B0B0B]/80 border border-[#C8A96B]/30 backdrop-blur-md px-3 py-2.5 hover:border-[#C8A96B]/60 transition-all duration-300 hover:bg-[#0B0B0B]/95"
+      >
+        <AlertTriangle size={13} className="text-[#C8A96B]/80 group-hover:text-[#C8A96B] transition-colors" />
+        <span className="text-[10px] font-medium tracking-widest uppercase text-[#C8A96B]/70 group-hover:text-[#C8A96B] transition-colors hidden sm:block">
+          Disclaimer
+        </span>
+      </button>
+
+      {/* Modal */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
+            onClick={(e) => e.target === e.currentTarget && setOpen(false)}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 40, scale: 0.97 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 40, scale: 0.97 }}
+              transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              className="bg-[#111111] border border-[#C8A96B]/20 w-full max-w-lg max-h-[85vh] overflow-y-auto relative"
+            >
+              {/* Gold top accent */}
+              <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#C8A96B]/60 to-transparent" />
+
+              {/* Header */}
+              <div className="flex items-start justify-between p-6 pb-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 border border-[#C8A96B]/30 flex items-center justify-center shrink-0">
+                    <AlertTriangle size={13} className="text-[#C8A96B]" />
+                  </div>
+                  <div>
+                    <h2 className="font-serif text-lg text-foreground">Important Disclaimer</h2>
+                    <p className="text-xs text-muted-foreground mt-0.5">Please read before you travel</p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setOpen(false)}
+                  className="text-muted-foreground hover:text-foreground transition-colors ml-4 shrink-0 mt-0.5"
+                  aria-label="Close"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+
+              {/* Divider */}
+              <div className="h-px bg-[#C8A96B]/10 mx-6" />
+
+              {/* Content */}
+              <div className="p-6 space-y-5">
+                {items.map((item, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.06 }}
+                    className="flex gap-3"
+                  >
+                    <div className="mt-0.5 shrink-0">{item.icon}</div>
+                    <div>
+                      <p className="text-xs font-medium tracking-widest uppercase text-[#C8A96B]/80 mb-1">{item.title}</p>
+                      <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* Footer note */}
+              <div className="px-6 pb-6">
+                <div className="border-t border-[#C8A96B]/10 pt-4">
+                  <p className="text-[10px] text-muted-foreground/50 leading-relaxed text-center">
+                    Travellers are encouraged to independently verify all travel details before visiting Jaisalmer.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }

@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowLeft, MapPin, Clock, Camera, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { AiDisclaimer } from "@/components/AiDisclaimer";
 
 export interface PlaceExperience {
   title: string;
@@ -160,7 +159,6 @@ export function PlacePage({ name, location, heroImg, gallery, about, experiences
                 </a>
               </div>
 
-              <AiDisclaimer variant="place" />
             </div>
           </div>
         </div>

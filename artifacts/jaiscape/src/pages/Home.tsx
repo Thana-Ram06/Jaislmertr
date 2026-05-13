@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowDown, Sparkles, X, MapPin, Calendar, Wallet, Heart, Handshake, TrendingUp } from "lucide-react";
 import { generateLocalItinerary } from "@/data/itineraries";
-import { AiDisclaimer } from "@/components/AiDisclaimer";
+
 import heroDunes from "@/assets/images/hero-dunes.png";
 import cardSafari from "@/assets/images/card-safari.png";
 import cardFort from "@/assets/images/card-fort.png";
@@ -272,8 +272,6 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <AiDisclaimer variant="planner" />
-
                     <Button
                       onClick={generateItinerary}
                       disabled={loading}
@@ -363,8 +361,6 @@ export default function Home() {
                         <p className="text-sm text-foreground/70">{itinerary.tip}</p>
                       </div>
                     )}
-
-                    <AiDisclaimer variant="planner" />
 
                     <div className="flex gap-3 pt-2">
                       <Button onClick={resetPlanner} variant="outline" className="flex-1 border-border hover:border-[#C8A96B] hover:text-[#C8A96B] rounded-none bg-transparent">

@@ -1,0 +1,91 @@
+Use this exact Replit AI prompt:
+
+⸻
+
+Improve the disclaimer/warning system on the Jaiscape website.
+
+IMPORTANT:
+Do NOT show the full disclaimer text directly on the main page anymore.
+
+NEW REQUIREMENT:
+
+1. Create Only a Small Warning Icon/Button
+    Instead of displaying the full disclaimer openly:
+
+* show only a small premium warning/info icon
+* keep it subtle and elegant
+* maintain luxury cinematic UI style
+
+Style Requirements:
+
+* gold accent styling
+* glassmorphism or soft blur effect
+* minimal modern design
+* fixed but non-intrusive placement
+* mobile responsive
+
+2. Interaction Behavior
+    When user clicks the warning icon:
+
+* open a premium modal/popup/drawer
+    OR expandable floating panel
+
+Inside it show:
+
+* AI image disclaimer
+* travel information disclaimer
+* pricing/timing disclaimer
+* weather disclaimer
+* booking disclaimer
+
+3. Premium Modal Design
+    The popup/modal should:
+
+* match the luxury black/gold theme
+* have smooth animation
+* elegant transitions
+* blurred background overlay
+* close button
+* responsive mobile layout
+
+4. Disclaimer Content
+    Keep the previously added disclaimer text.
+
+Include:
+
+* AI-generated image notice
+* travel detail verification notice
+* pricing/timing variability
+* booking availability notice
+* weather condition notice
+
+5. UX Requirements
+
+* modal should open smoothly
+* clicking outside closes modal
+* ESC key closes modal
+* smooth fade animation
+* accessible interactions
+
+6. Placement
+    Place only the warning icon:
+
+* near footer
+    OR
+* bottom corner floating button
+    OR
+* navbar utility area
+
+IMPORTANT:
+Do NOT clutter the homepage with long disclaimer text anymore.
+
+7. Performance
+
+* lightweight implementation
+* no unnecessary libraries
+* no hydration issues
+* maintain Vercel optimization
+* smooth mobile performance
+
+8. Final Goal
+    The warning/disclaimer system should feel premium, elegant, minimal, and professional — giving important information only when users choose to open it, without disturbing the cinematic homepage experience.
