@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd ../../ && pnpm --filter @workspace/jaiscape run build",
+  "outputDirectory": "../jaiscape/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
