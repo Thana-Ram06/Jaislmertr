@@ -1,0 +1,177 @@
+Use this exact Replit AI prompt:
+
+⸻
+
+Improve and fix the existing Jaiscape website while keeping all current premium cinematic UI and features intact. Do NOT redesign the website. Only enhance functionality and add the following systems carefully while maintaining full Vercel compatibility and performance optimization.
+
+IMPORTANT:
+
+* Keep Next.js 16 App Router + TypeScript + Tailwind CSS
+* Maintain current luxury black/gold cinematic design
+* Preserve all existing features
+* Keep smooth mobile responsiveness
+* Maintain fast loading performance
+* Avoid hydration issues
+
+MAIN TASKS:
+
+1. Completely Fix AI Trip Planner
+    The current AI Trip Planner is not working properly because there is no real AI integration.
+
+Instead of using external AI APIs:
+Create a fully working local smart itinerary system.
+
+NEW SYSTEM:
+Create predefined premium travel itineraries for:
+
+* 1 day
+* 2 day
+* 3 day
+* 4 day
+* 5 day
+* 6 day
+* 7 day
+* 8 day
+* 9 day
+* 10 day
+* 11 day
+* 12 day
+* 13 day
+* 14 day
+* 15 day
+
+When user selects any trip duration:
+Automatically display a beautiful luxury itinerary.
+
+Example:
+If user selects:
+“5 Days”
+
+Show:
+
+* Day-wise itinerary
+* Recommended places
+* Cafes
+* Desert experiences
+* Sunset points
+* Camps
+* Travel tips
+* Budget estimate
+* Local recommendations
+
+Use realistic Jaisalmer travel planning.
+
+2. AI Trip Planner UI Requirements
+    Keep the premium cinematic UI.
+
+The planner should include:
+
+* number of days selector
+* budget selector
+* luxury/budget/adventure selector
+* interests:
+    * photography
+    * cafes
+    * desert safari
+    * heritage
+    * hidden places
+
+After clicking:
+“Generate Trip”
+
+Show:
+
+* animated loading state
+* beautiful itinerary cards
+* smooth transitions
+* immersive travel layout
+
+3. Add Important AI Image Disclaimer
+    The website currently uses AI-generated images.
+
+Add a premium warning/disclaimer section globally across the website.
+
+IMPORTANT:
+This should be professionally designed.
+
+Design:
+
+* elegant warning icon
+* subtle gold warning card
+* premium glassmorphism feel
+* responsive layout
+
+DISCLAIMER TEXT:
+“Some visuals used on Jaiscape are AI-generated cinematic representations created for artistic and inspirational purposes. Actual locations, colors, atmosphere, and experiences may vary in real life. Travelers are encouraged to verify important travel details independently before visiting.”
+
+4. Add Additional Travel Disclaimers
+    Also add:
+
+* timings may change
+* pricing may vary
+* weather conditions may affect experiences
+* booking availability may differ
+* travelers should verify local information
+
+5. Placement Requirements
+    Add disclaimer section:
+
+* footer area
+* trip planner section
+* place detail pages
+
+Do NOT make it intrusive.
+Keep it elegant and premium.
+
+6. Add Warning Symbol
+    Use a modern premium warning/info icon.
+
+Requirements:
+
+* subtle gold styling
+* minimal
+* elegant
+* not alarming
+* luxury UI consistent
+
+7. Preserve Existing Features
+    IMPORTANT:
+    Do NOT remove:
+
+* Explore section
+* Partner With Jaiscape
+* place pages
+* galleries
+* animations
+* contact systems
+* Instagram/X links
+* cinematic sections
+* mobile responsiveness
+
+8. Improve UX
+
+* smooth itinerary transitions
+* responsive trip planner
+* loading animations
+* mobile-friendly cards
+* elegant hover effects
+
+9. Performance Requirements
+
+* keep lightweight implementation
+* avoid external AI dependency
+* maintain fast Vercel deployment
+* avoid hydration issues
+* use optimized rendering
+* maintain Lighthouse performance
+
+10. Final Goal
+    The website should now feel like a fully functional premium tourism startup with:
+
+* working smart trip planner
+* luxury itinerary system
+* realistic travel guidance
+* professional disclaimers
+* cinematic premium UI
+* smooth mobile experience
+* polished startup-quality interactions.

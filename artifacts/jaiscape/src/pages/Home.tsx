@@ -2,7 +2,9 @@ import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowDown, Loader2, Sparkles, X, MapPin, Calendar, Wallet, Heart, Handshake } from "lucide-react";
+import { ArrowDown, Sparkles, X, MapPin, Calendar, Wallet, Heart, Handshake, TrendingUp } from "lucide-react";
+import { generateLocalItinerary } from "@/data/itineraries";
+import { AiDisclaimer } from "@/components/AiDisclaimer";
 import heroDunes from "@/assets/images/hero-dunes.png";
 import cardSafari from "@/assets/images/card-safari.png";
 import cardFort from "@/assets/images/card-fort.png";
@@ -24,28 +26,12 @@ import reelFire from "@/assets/images/reel-fire.png";
 import h1 from "@/assets/images/hidden-1.png";
 import h4 from "@/assets/images/hidden-4.png";
 
-import { Input } from "@/components/ui/input";
-import { useState, useRef } from "react";
-
-interface ItineraryActivity {
-  time: string;
-  activity: string;
-}
-
-interface ItineraryDay {
-  day: number;
-  theme: string;
-  activities: ItineraryActivity[];
-}
-
-interface Itinerary {
-  title: string;
-  days: ItineraryDay[];
-  tip?: string;
-}
+import { useState } from "react";
 
 const TRAVEL_STYLES = ["Luxury", "Budget", "Adventure", "Romantic", "Family"];
-const INTERESTS = ["Desert Safari", "Cafes", "Hidden Places", "Photography", "Luxury Camps"];
+const INTERESTS = ["Desert Safari", "Cafes", "Hidden Places", "Photography", "Heritage"];
+const DAY_OPTIONS = Array.from({ length: 15 }, (_, i) => String(i + 1));
+const BUDGET_OPTIONS = ["No limit", "Under ₹5,000", "₹5,000–₹15,000", "₹15,000–₹30,000", "₹30,000–₹60,000", "₹60,000+"];
 
 export default function Home() {
   const experiences = [
@@ -74,17 +60,13 @@ export default function Home() {
     { title: "The Landscape", img: h4 },
   ];
 
-  // AI Planner state
   const [showPlanner, setShowPlanner] = useState(false);
-  const [prompt, setPrompt] = useState("");
-  const [days, setDays] = useState("2");
-  const [budget, setBudget] = useState("");
+  const [days, setDays] = useState("3");
+  const [budget, setBudget] = useState("No limit");
   const [style, setStyle] = useState("Luxury");
   const [interests, setInterests] = useState<string[]>(["Desert Safari"]);
   const [loading, setLoading] = useState(false);
-  const [itinerary, setItinerary] = useState<Itinerary | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const abortRef = useRef<AbortController | null>(null);
+  const [itinerary, setItinerary] = useState<ReturnType<typeof generateLocalItinerary> | null>(null);
 
   function toggleInterest(item: string) {
     setInterests((prev) =>
@@ -92,76 +74,23 @@ export default function Home() {
     );
   }
 
-  async function generateItinerary() {
+  function generateItinerary() {
     if (loading) return;
     setLoading(true);
     setItinerary(null);
-    setError(null);
-
-    abortRef.current?.abort();
-    const controller = new AbortController();
-    abortRef.current = controller;
-
-    const fullPrompt = [
-      `${days}-day trip to Jaisalmer`,
-      style && `Travel style: ${style}`,
-      budget && `Budget: ${budget}`,
-      interests.length > 0 && `Interests: ${interests.join(", ")}`,
-      prompt && prompt.trim(),
-    ]
-      .filter(Boolean)
-      .join(". ");
-
-    let buffer = "";
-    let lineBuffer = "";
-
-    try {
-      const response = await fetch("/api/itinerary/generate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt: fullPrompt }),
-        signal: controller.signal,
-      });
-
-      if (!response.ok) throw new Error(`Server error: ${response.status}`);
-
-      const reader = response.body?.getReader();
-      if (!reader) throw new Error("No response body");
-      const decoder = new TextDecoder();
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        lineBuffer += decoder.decode(value, { stream: true });
-        const lines = lineBuffer.split("\n");
-        lineBuffer = lines.pop() ?? "";
-        for (const line of lines) {
-          if (!line.startsWith("data: ")) continue;
-          try {
-            const data = JSON.parse(line.slice(6));
-            if (data.error) throw new Error(data.error);
-            if (data.content) buffer += data.content;
-            if (data.done) setItinerary(JSON.parse(buffer) as Itinerary);
-          } catch { /* continue */ }
-        }
-      }
-    } catch (err) {
-      if ((err as Error).name !== "AbortError") {
-        setError("Something went wrong. Please try again.");
-      }
-    } finally {
+    setTimeout(() => {
+      const result = generateLocalItinerary(Number(days), style, interests);
+      setItinerary(result);
       setLoading(false);
-    }
+    }, 1400);
   }
 
   function resetPlanner() {
     setItinerary(null);
-    setPrompt("");
-    setBudget("");
-    setDays("2");
+    setDays("3");
+    setBudget("No limit");
     setStyle("Luxury");
     setInterests(["Desert Safari"]);
-    setError(null);
   }
 
   return (
@@ -260,12 +189,12 @@ export default function Home() {
                       <label className="flex items-center gap-2 text-xs tracking-widest uppercase text-[#C8A96B] mb-3">
                         <Calendar size={12} /> Number of Days
                       </label>
-                      <div className="flex gap-3">
-                        {["1", "2", "3", "4", "5"].map((d) => (
+                      <div className="flex flex-wrap gap-2">
+                        {DAY_OPTIONS.map((d) => (
                           <button
                             key={d}
                             onClick={() => setDays(d)}
-                            className={`w-12 h-12 border text-sm font-medium transition-colors ${
+                            className={`w-10 h-10 border text-sm font-medium transition-colors ${
                               days === d
                                 ? "border-[#C8A96B] text-[#C8A96B] bg-[#C8A96B]/10"
                                 : "border-border text-muted-foreground hover:border-[#C8A96B]/40"
@@ -280,15 +209,23 @@ export default function Home() {
                     {/* Budget */}
                     <div>
                       <label className="flex items-center gap-2 text-xs tracking-widest uppercase text-[#C8A96B] mb-3">
-                        <Wallet size={12} /> Budget (optional)
+                        <Wallet size={12} /> Budget Range
                       </label>
-                      <Input
-                        value={budget}
-                        onChange={(e) => setBudget(e.target.value)}
-                        placeholder="e.g. ₹10,000 · ₹50,000 · No limit"
-                        className="bg-[#0B0B0B] border-[#C8A96B]/20 rounded-none focus-visible:ring-[#C8A96B]/50 placeholder:text-muted-foreground/50"
-                        disabled={loading}
-                      />
+                      <div className="flex flex-wrap gap-2">
+                        {BUDGET_OPTIONS.map((b) => (
+                          <button
+                            key={b}
+                            onClick={() => setBudget(b)}
+                            className={`px-3 py-2 border text-xs transition-colors ${
+                              budget === b
+                                ? "border-[#C8A96B] text-[#C8A96B] bg-[#C8A96B]/10"
+                                : "border-border text-muted-foreground hover:border-[#C8A96B]/40"
+                            }`}
+                          >
+                            {b}
+                          </button>
+                        ))}
+                      </div>
                     </div>
 
                     {/* Travel Style */}
@@ -335,22 +272,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Extra notes */}
-                    <div>
-                      <label className="text-xs tracking-widest uppercase text-[#C8A96B] mb-3 block">Any other notes (optional)</label>
-                      <Input
-                        value={prompt}
-                        onChange={(e) => setPrompt(e.target.value)}
-                        onKeyDown={(e) => e.key === "Enter" && generateItinerary()}
-                        placeholder="e.g. travelling with kids, vegetarian food only..."
-                        className="bg-[#0B0B0B] border-[#C8A96B]/20 rounded-none focus-visible:ring-[#C8A96B]/50 placeholder:text-muted-foreground/50"
-                        disabled={loading}
-                      />
-                    </div>
-
-                    {error && (
-                      <p className="text-red-400 text-sm border border-red-500/30 p-3">{error}</p>
-                    )}
+                    <AiDisclaimer variant="planner" />
 
                     <Button
                       onClick={generateItinerary}
@@ -359,10 +281,11 @@ export default function Home() {
                     >
                       {loading ? (
                         <span className="flex items-center gap-2">
-                          <Loader2 size={18} className="animate-spin" /> Crafting your itinerary...
+                          <span className="inline-block w-4 h-4 border-2 border-black/30 border-t-black rounded-full animate-spin" />
+                          Crafting your itinerary...
                         </span>
                       ) : (
-                        "Generate Trip"
+                        <span className="flex items-center gap-2"><Sparkles size={16} /> Generate Trip</span>
                       )}
                     </Button>
 
@@ -413,12 +336,35 @@ export default function Home() {
                       </motion.div>
                     ))}
 
+                    {/* Budget estimate */}
+                    <div className="border border-[#C8A96B]/20 p-4 bg-[#C8A96B]/5 flex items-start gap-3">
+                      <TrendingUp size={14} className="text-[#C8A96B] mt-0.5 shrink-0" />
+                      <div>
+                        <p className="text-xs font-medium tracking-widest text-[#C8A96B] uppercase mb-1">Estimated Budget</p>
+                        <p className="text-sm text-foreground/80">{itinerary.budgetEstimate}</p>
+                      </div>
+                    </div>
+
+                    {/* Highlights */}
+                    <div className="border border-border p-4 bg-[#0B0B0B]/50">
+                      <p className="text-xs font-medium tracking-widest text-[#C8A96B] uppercase mb-3">Trip Highlights</p>
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        {itinerary.highlights.map((h, i) => (
+                          <li key={i} className="flex items-center gap-2 text-xs text-foreground/70">
+                            <span className="text-[#C8A96B]">✦</span> {h}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
                     {itinerary.tip && (
                       <div className="border border-[#C8A96B]/20 p-4 bg-[#C8A96B]/5">
                         <p className="text-xs font-medium tracking-widest text-[#C8A96B] uppercase mb-1">Insider Tip</p>
                         <p className="text-sm text-foreground/70">{itinerary.tip}</p>
                       </div>
                     )}
+
+                    <AiDisclaimer variant="planner" />
 
                     <div className="flex gap-3 pt-2">
                       <Button onClick={resetPlanner} variant="outline" className="flex-1 border-border hover:border-[#C8A96B] hover:text-[#C8A96B] rounded-none bg-transparent">
