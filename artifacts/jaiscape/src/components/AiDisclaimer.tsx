@@ -17,7 +17,7 @@ export function DisclaimerModal() {
     {
       icon: <Info size={14} className="text-[#C8A96B]" />,
       title: "AI-Generated Visuals",
-      desc: "Some visuals on Jaiscape are AI-generated cinematic representations created for artistic and inspirational purposes. Actual locations, colours, atmosphere, and experiences may differ from what is shown.",
+      desc: "Some visuals on Jaisalmer.city are AI-generated cinematic representations created for artistic and inspirational purposes. Actual locations, colours, atmosphere, and experiences may differ from what is shown.",
     },
     {
       icon: <Clock size={14} className="text-[#C8A96B]" />,

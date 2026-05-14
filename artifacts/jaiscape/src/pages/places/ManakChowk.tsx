@@ -19,7 +19,7 @@ export default function ManakChowk() {
       ]}
       experiences={[
         { title: "Morning Market Walk", desc: "Arrive at 8 AM and walk the chowk as vendors set up — the colours, smells, and textures of the daily market are extraordinary photographic and sensory material.", tag: "Cultural" },
-        { title: "Craft Shopping", desc: "Browse for mirror-work embroidery, hand-block prints, carved stone, lac bangles, and silver jewellery with guidance on quality and fair pricing from Jaiscape.", tag: "Shopping" },
+        { title: "Craft Shopping", desc: "Browse for mirror-work embroidery, hand-block prints, carved stone, lac bangles, and silver jewellery with guidance on quality and fair pricing from Jaisalmer.city.", tag: "Shopping" },
         { title: "Street Food Trail", desc: "Sample mirchi bada (stuffed chilli fritters), pyaaz kachori, and mawa kachori from the street vendors — the best flavours of Rajasthani street food in one square.", tag: "Food" },
         { title: "Old City Photography", desc: "The narrow lanes radiating from Manak Chowk offer the finest street photography in Jaisalmer — colourful doorways, vendors, and the sandstone architecture of everyday life.", tag: "Photography" },
       ]}

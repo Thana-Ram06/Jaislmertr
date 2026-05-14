@@ -514,7 +514,7 @@ export default function Home() {
             <div>
               <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Featured Partners</h2>
               <div className="w-16 h-px bg-[#C8A96B]" />
-              <p className="text-muted-foreground mt-4 text-sm font-light">Handpicked businesses trusted by Jaiscape</p>
+              <p className="text-muted-foreground mt-4 text-sm font-light">Handpicked businesses trusted by Jaisalmer.city</p>
             </div>
             <Link href="/partner">
               <Button variant="outline" className="border-[#C8A96B]/40 text-[#C8A96B] hover:bg-[#C8A96B] hover:text-black rounded-none bg-transparent">
@@ -578,7 +578,7 @@ export default function Home() {
               Own a Camp, Café<br />or Hotel in Jaisalmer?
             </h2>
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              Partner with Jaiscape and showcase your business to travelers from around the world. Get featured listings, social media promotion, and a place in every AI-generated itinerary.
+              Partner with Jaisalmer.city and showcase your business to travelers from around the world. Get featured listings, social media promotion, and a place in every AI-generated itinerary.
             </p>
             <div className="flex flex-wrap gap-4 justify-center mb-12">
               {["Desert Camps", "Hotels", "Cafes & Restaurants", "Safari Providers", "Local Artisans"].map((tag) => (

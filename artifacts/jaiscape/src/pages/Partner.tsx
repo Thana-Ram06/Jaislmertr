@@ -30,17 +30,17 @@ const benefits = [
   {
     icon: Star,
     title: "Featured Listings",
-    desc: "Your business gets a premium featured card on Jaiscape, seen by every traveler who visits — positioned above standard search results.",
+    desc: "Your business gets a premium featured card on Jaisalmer.city, seen by every traveler who visits — positioned above standard search results.",
   },
   {
     icon: Instagram,
     title: "Instagram Promotion",
-    desc: "Cinematic content of your property shared across Jaiscape's Instagram with full credit — reaching thousands of travel enthusiasts.",
+    desc: "Cinematic content of your property shared across Jaisalmer.city's Instagram with full credit — reaching thousands of travel enthusiasts.",
   },
   {
     icon: Globe,
     title: "Global Tourist Reach",
-    desc: "Jaiscape is visited by travelers from India, Europe, US, and Southeast Asia. Your listing gets in front of the right audience.",
+    desc: "Jaisalmer.city is visited by travelers from India, Europe, US, and Southeast Asia. Your listing gets in front of the right audience.",
   },
   {
     icon: TrendingUp,
@@ -112,7 +112,7 @@ export default function Partner() {
     }
 
     const waMessage = encodeURIComponent(
-      `Hi Jaiscape Team! 👋\n\nI'd like to partner with Jaiscape.\n\n` +
+      `Hi Jaisalmer.city Team! 👋\n\nI'd like to partner with Jaisalmer.city.\n\n` +
       `📌 *Business Name:* ${values.businessName}\n` +
       `👤 *Owner Name:* ${values.ownerName}\n` +
       `🏷️ *Business Type:* ${values.businessType}\n` +
@@ -151,7 +151,7 @@ export default function Partner() {
               animate={{ opacity: 1, y: 0 }}
               className="font-serif text-5xl md:text-7xl text-white leading-none"
             >
-              Partner With Jaiscape
+              Partner With Jaisalmer.city
             </motion.h1>
           </div>
         </div>
@@ -165,10 +165,10 @@ export default function Partner() {
               </h2>
               <div className="w-16 h-px bg-[#C8A96B] mb-8" />
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Jaiscape helps travelers discover the most authentic and premium experiences in Jaisalmer. We collaborate with desert camps, cafes, hotels, restaurants, safari providers, and local artisans — curating them into beautiful, trusted listings that travelers actually use when planning their trips.
+                Jaisalmer.city helps travelers discover the most authentic and premium experiences in Jaisalmer. We collaborate with desert camps, cafes, hotels, restaurants, safari providers, and local artisans — curating them into beautiful, trusted listings that travelers actually use when planning their trips.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                If you run a camp, café, hotel, or any experience in Jaisalmer and want to reach more travelers, we'd love to feature you. Partnering with Jaiscape means your business becomes part of a premium discovery platform — not just a link in a list.
+                If you run a camp, café, hotel, or any experience in Jaisalmer and want to reach more travelers, we'd love to feature you. Partnering with Jaisalmer.city means your business becomes part of a premium discovery platform — not just a link in a list.
               </p>
             </div>
 
@@ -267,7 +267,7 @@ export default function Partner() {
                   <h2 className="font-serif text-4xl text-foreground mb-4">Get In Touch</h2>
                   <div className="w-16 h-px bg-[#C8A96B] mb-8" />
                   <p className="text-muted-foreground leading-relaxed mb-10">
-                    Ready to get your business featured on Jaiscape? Fill out the form or reach us directly — we'll respond within 24 hours.
+                    Ready to get your business featured on Jaisalmer.city? Fill out the form or reach us directly — we'll respond within 24 hours.
                   </p>
                 </div>
 
@@ -289,7 +289,7 @@ export default function Partner() {
                       </Button>
                     </a>
                     <a
-                      href="https://wa.me/916350577731?text=Hi%2C%20I%20want%20to%20partner%20with%20Jaiscape"
+                      href="https://wa.me/916350577731?text=Hi%2C%20I%20want%20to%20partner%20with%20Jaisalmer.city"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1"
@@ -361,7 +361,7 @@ export default function Partner() {
                       <h3 className="font-serif text-3xl text-foreground mb-4">Request Sent!</h3>
                       <div className="w-16 h-px bg-[#C8A96B] mx-auto mb-6" />
                       <p className="text-muted-foreground text-base leading-relaxed max-w-sm mb-4">
-                        Thank you for your interest in partnering with Jaiscape. Our team will contact you shortly.
+                        Thank you for your interest in partnering with Jaisalmer.city. Our team will contact you shortly.
                       </p>
                       <p className="text-muted-foreground/60 text-sm mb-10">
                         A WhatsApp message with your details has also been opened — send it to confirm your inquiry.

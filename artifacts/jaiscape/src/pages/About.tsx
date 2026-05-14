@@ -25,7 +25,7 @@ export default function About() {
               <h2 className="font-serif text-4xl mb-6 text-[#C8A96B]">Our Story</h2>
               <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
                 <p>
-                  Jaiscape was born out of a desire to showcase the golden city of Jaisalmer beyond the typical tourist trails. We saw visitors rushing through centuries of history, missing the quiet magic that happens when the desert sun hits the sandstone walls.
+                  Jaisalmer.city was born out of a desire to showcase the golden city of Jaisalmer beyond the typical tourist trails. We saw visitors rushing through centuries of history, missing the quiet magic that happens when the desert sun hits the sandstone walls.
                 </p>
                 <p>
                   We are a collective of locals, travelers, and designers who want to elevate the way you experience this extraordinary landscape. We don't just list places; we curate feelings.

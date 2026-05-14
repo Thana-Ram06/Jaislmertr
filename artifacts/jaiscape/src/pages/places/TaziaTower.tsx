@@ -20,7 +20,7 @@ export default function TaziaTower() {
       experiences={[
         { title: "Lattice Light Photography", desc: "Shoot the carved stone screens from inside — the light filters through in patterns that shift as the sun moves. Morning eastern light is most dramatic.", tag: "Photography" },
         { title: "Badal Mahal Interior Tour", desc: "Explore the painted cloud-blue chambers of the Cloud Palace surrounding the tower — one of the fort's most intimate and beautiful interiors.", tag: "Heritage Tour" },
-        { title: "Fort Architecture Trail", desc: "Combine the Tazia Tower with the Jain Temples and Raj Mahal in a single half-day fort walk guided by Jaiscape's heritage specialists.", tag: "Guided Tour" },
+        { title: "Fort Architecture Trail", desc: "Combine the Tazia Tower with the Jain Temples and Raj Mahal in a single half-day fort walk guided by Jaisalmer.city's heritage specialists.", tag: "Guided Tour" },
         { title: "Cultural History Talk", desc: "Learn the story of how a Hindu royal family came to build a tower honouring a Muslim tradition — a story of Jaisalmer's unique cultural fusion.", tag: "Cultural" },
       ]}
       travelInfo={{

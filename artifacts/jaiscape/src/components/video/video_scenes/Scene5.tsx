@@ -37,7 +37,7 @@ export function Scene5() {
           className="mb-6"
         >
           <h1 className="text-[12vw] font-display text-text-primary leading-none tracking-tight">
-            Jaiscape.
+            Jaisalmer.city
           </h1>
         </motion.div>
 

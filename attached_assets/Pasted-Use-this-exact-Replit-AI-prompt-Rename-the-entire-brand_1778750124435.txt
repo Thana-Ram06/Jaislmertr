@@ -1,0 +1,119 @@
+Use this exact Replit AI prompt:
+
+⸻
+
+Rename the entire branding of the website from “Jaiscape” to “Jaisalmer.city” across the whole project while keeping all existing UI, functionality, animations, SEO structure, and premium cinematic design intact.
+
+IMPORTANT:
+
+* Do NOT break the design
+* Do NOT remove any features
+* Maintain full Vercel compatibility
+* Keep Next.js 16 + TypeScript + Tailwind CSS architecture
+* Preserve all animations and responsiveness
+
+REQUIRED CHANGES:
+
+1. Replace Branding Everywhere
+    Replace every occurrence of:
+    “Jaiscape”
+
+With:
+“Jaisalmer.city”
+
+Across:
+
+* navbar logo text
+* homepage
+* footer
+* headings
+* metadata
+* SEO titles
+* Open Graph tags
+* social preview titles
+* loading screens
+* disclaimer text
+* contact section
+* partner section
+* AI trip planner
+* all reusable components
+* all pages
+* all layouts
+
+2. Keep Premium Styling
+    IMPORTANT:
+    “Jaisalmer.city” should still look:
+
+* luxury
+* modern
+* cinematic
+* startup-quality
+
+Adjust typography and spacing if needed so the longer name looks visually balanced.
+
+3. Update Logo Text
+    Update the logo typography from:
+    “Jaiscape”
+
+To:
+“Jaisalmer.city”
+
+Maintain:
+
+* same premium style
+* same gold accent
+* same cinematic branding
+
+4. Update SEO Metadata
+    Update:
+
+* page titles
+* descriptions
+* Open Graph metadata
+* Twitter metadata
+
+Examples:
+“Discover The Soul Of Jaisalmer | Jaisalmer.city”
+
+5. Update Footer
+    Replace:
+    © 2026 Jaiscape
+
+With:
+© 2026 Jaisalmer.city
+
+6. Update Contact & Partner Sections
+    Replace all old references with:
+    “Jaisalmer.city”
+
+Examples:
+
+* Partner with Jaisalmer.city
+* Discover Jaisalmer with Jaisalmer.city
+
+7. Keep Existing Features
+    Do NOT remove:
+
+* AI Trip Planner
+* Explore section
+* place pages
+* disclaimers
+* partner forms
+* animations
+* galleries
+* cinematic sections
+* mobile responsiveness
+
+8. Performance Requirements
+
+* maintain Lighthouse performance
+* avoid hydration issues
+* keep fast loading
+* preserve optimized rendering
+
+9. Final Goal
+    The entire website should now feel like a premium global tourism platform branded consistently as:
+
+“Jaisalmer.city”
+
+while preserving the same cinematic luxury experience and production-quality UI.

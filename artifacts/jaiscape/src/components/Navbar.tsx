@@ -34,7 +34,7 @@ export function Navbar() {
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
           <Link href="/" className="group flex items-center gap-1 z-50">
-            <span className="font-serif text-2xl md:text-3xl tracking-wide text-foreground">Jaiscape</span>
+            <span className="font-serif text-xl md:text-2xl tracking-wide text-foreground">Jaisalmer.city</span>
             <span className="text-[#C8A96B] transition-transform duration-500 group-hover:rotate-180">✦</span>
           </Link>
 
@@ -64,7 +64,7 @@ export function Navbar() {
                   }`}
                   data-testid="button-partner"
                 >
-                  Partner With Jaiscape
+                  Partner With Us
                 </Button>
               </Link>
               <Link href="/explore">
@@ -118,7 +118,7 @@ export function Navbar() {
                   variant="ghost"
                   className="mt-2 border border-[#C8A96B]/40 text-[#C8A96B] hover:bg-[#C8A96B]/10 font-medium tracking-wide text-lg px-8 py-6"
                 >
-                  Partner With Jaiscape
+                  Partner With Us
                 </Button>
               </Link>
               <Link href="/explore" onClick={() => setIsMobileMenuOpen(false)}>

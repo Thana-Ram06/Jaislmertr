@@ -10,7 +10,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-1">
             <Link href="/" className="flex items-center gap-1 mb-6">
-              <span className="font-serif text-3xl tracking-wide text-foreground">Jaiscape</span>
+              <span className="font-serif text-2xl tracking-wide text-foreground">Jaisalmer.city</span>
               <span className="text-[#C8A96B]">✦</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
@@ -83,7 +83,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">© 2026 Jaiscape. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground">© 2026 Jaisalmer.city. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <DisclaimerModal />
             <p className="text-xs text-muted-foreground">Crafted with love for the Golden City</p>
