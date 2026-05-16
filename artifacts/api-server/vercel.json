@@ -1,3 +1,3 @@
 {
-  "buildCommand": "cd ../../ && pnpm --filter @workspace/jaiscape run build && mkdir -p artifacts/api-server/.vercel/output/static && node -e \"const fs=require('fs');fs.writeFileSync('artifacts/api-server/.vercel/output/config.json',JSON.stringify({version:3,routes:[{handle:'filesystem'},{src:'/(.*)',dest:'/index.html'}]}))\" && cp -r artifacts/jaiscape/dist/. artifacts/api-server/.vercel/output/static/"
+  "buildCommand": "cd ../../ && pnpm --filter @workspace/jaiscape run build && mkdir -p .vercel/output/static && node -e \"const fs=require('fs');fs.writeFileSync('.vercel/output/config.json',JSON.stringify({version:3,routes:[{handle:'filesystem'},{src:'/(.*)',dest:'/index.html'}]}))\" && cp -r artifacts/jaiscape/dist/. .vercel/output/static/"
 }
